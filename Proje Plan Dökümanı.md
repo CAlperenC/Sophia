@@ -37,7 +37,7 @@ Projede görev alan herkes projenin yazılımına katkıda bulunacak olup, ana g
 
 ## Anahtar Aşamalar ve Süreç
 
-![Gantt Chart](https://github.com/CAlperenC/Sophia/blob/main/Gantt%20Chart.png?raw=true)
+![Gantt Chart](https://github.com/CAlperenC/Sophia/blob/main/Gantt_Chart.png?raw=true)
 ## Kaynak Planlama
 - **Felsefi Bilgilere Erişim:** Wikipedia, Stanford Felsefe Ansiklopedisi gibi kaynaklar yolu içerik için gerekli bilgiler toplanılacak.  
 - **Versiyon Kontrolü:** Git, Github üzerinden gerçekleştirilecek.  
