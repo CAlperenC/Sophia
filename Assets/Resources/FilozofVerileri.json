@@ -1,0 +1,67 @@
+{
+  "dugumler": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "seviye": "Root",
+      "isim": "Felsefe",
+      "motto": "Bütün bilimlerin anası.",
+      "aciklama": "Varlık, bilgi, gerçek, adalet ve akıl gibi konularla ilgili temel sorunlara ilişkin yapılan sistematik çalışmalardır.",
+      "baglantilar": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "seviye": "Tur",
+      "isim": "Ahlak Felsefesi (Etik)",
+      "motto": "Nasıl yaşamalıyım?",
+      "aciklama": "İnsan eylemlerinin değerini, iyi ve kötü kavramlarını inceleyen felsefe dalı.",
+      "baglantilar": []
+    },
+    {
+      "id": 3,
+      "parentId": 2,
+      "seviye": "Donem",
+      "isim": "Antik Çağ",
+      "motto": "",
+      "aciklama": "MÖ 6. yüzyıl ile MS 4. yüzyıl arasında Yunan ve Roma kültürlerinde gelişen felsefi dönem.",
+      "baglantilar": []
+    },
+    {
+      "id": 4,
+      "parentId": 3,
+      "seviye": "Akim",
+      "isim": "Stoacılık",
+      "motto": "Doğaya uygun yaşa.",
+      "aciklama": "Erdemin tek gerçek iyi olduğunu ve dışsal olaylara karşı kayıtsız kalınması gerektiğini savunan Helenistik felsefe okulu.",
+      "baglantilar": []
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "seviye": "Filozof",
+      "isim": "Marcus Aurelius",
+      "motto": "Hayatımız, düşüncelerimizin eseridir.",
+      "aciklama": "Roma İmparatoru ve Stoacı filozof. 'Kendime Düşünceler' adlı eseriyle tanınır.",
+      "baglantilar": [6]
+    },
+    {
+      "id": 6,
+      "parentId": 4,
+      "seviye": "Filozof",
+      "isim": "Epiktetos",
+      "motto": "Sadece kontrol edebileceğin şeylere odaklan.",
+      "aciklama": "Köle olarak doğan ve sonradan azat edilen Stoacı filozof.",
+      "baglantilar": [5]
+    },
+    {
+      "id": 7,
+      "parentId": 1,
+      "seviye": "Tur",
+      "isim": "Bilgi Felsefesi (Epistemoloji)",
+      "motto": "Neyi, ne kadar bilebiliriz?",
+      "aciklama": "Bilginin doğasını, kaynağını ve sınırlarını inceleyen felsefe dalı.",
+      "baglantilar": []
+    }
+  ]
+}
