@@ -1,7 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-// --- 1. VERİ MODELLERİ ---
 [System.Serializable]
 public class FelsefeDugumu
 {
@@ -17,68 +16,76 @@ public class FelsefeDugumu
 [System.Serializable]
 public class FelsefeVeritabani
 {
-    // Not: Buradaki isim "dugumler", JSON dosyasındaki liste adıyla BİREBİR aynı olmalıdır.
+    //isim  JSON dosyasındaki liste adıyla aynı olmalıdır.
     public List<FelsefeDugumu> dugumler;
 }
 
-
-// --- 2. YÖNETİCİ SINIF ---
 public class PhilosophyDataManager : MonoBehaviour
 {
-    // Uygulama boyunca kullanacağımız ana veri listemiz
     public List<FelsefeDugumu> tumVeriler = new List<FelsefeDugumu>();
+    
+    [Header("UI Ayarları")]
+    public GameObject butonPrefab;
+    public RectTransform icerikPaneli;
+    
+    [Header("Ağaç Boşluk Ayarları")]
+    public float yatayBosluk = 300f; 
+    public float dikeyBosluk = 200f; 
 
     void Start()
     {
         VerileriYukle();
-        
+        FelsefeDugumu rootDugum = tumVeriler.Find(x => x.parentId == 0);
+        if (rootDugum != null)
+        {
+            DugumOlustur(rootDugum, new Vector2(0, -50));
+        }
     }
 
     void VerileriYukle()
     {
-        // Adım 1: Resources klasöründeki JSON dosyasını okuyoruz.
-        // DİKKAT: Uzantıyı (.json) YAZMIYORUZ, sadece dosyanın adını veriyoruz.
         TextAsset jsonDosyasi = Resources.Load<TextAsset>("FilozofVerileri");
-
-        // Null kontrolü: Takım projelerinde biri yanlışlıkla dosyayı siler veya adını değiştirirse
-        // uygulamanın çökmesini engellemek için bu kontrol hayat kurtarır.
-        if (jsonDosyasi == null)
+        if (jsonDosyasi != null)
         {
-            Debug.LogError("FilozofVerileri.json dosyası Resources klasöründe bulunamadı!");
-            return;
-        }
-
-        // Adım 2: JSON metnini (string) C# nesnesine dönüştürüyoruz (De-serialization)
-        FelsefeVeritabani veritabani = JsonUtility.FromJson<FelsefeVeritabani>(jsonDosyasi.text);
-
-        // Adım 3: Çektiğimiz veriyi güvenli bir şekilde ana listemize aktarıyoruz
-        if (veritabani != null && veritabani.dugumler != null)
-        {
+            FelsefeVeritabani veritabani = JsonUtility.FromJson<FelsefeVeritabani>(jsonDosyasi.text);
             tumVeriler = veritabani.dugumler;
-            Debug.Log($"<color=green>Başarılı!</color> Toplam {tumVeriler.Count} adet felsefe düğümü yüklendi.");
-
-            // Verinin doğru geldiğinden emin olmak için test fonksiyonumuzu çağırıyoruz
-            TestIcinKonsolaYazdir();
-        }
-        else
-        {
-            Debug.LogError("JSON dosyası bulundu ama içi boş veya format hatalı!");
         }
     }
 
-    // Konsol üzerinden verilerin doğru eşleşip eşleşmediğini kontrol eden test fonksiyonu
-    void TestIcinKonsolaYazdir()
+    public GameObject DugumOlustur(FelsefeDugumu veri, Vector2 pozisyon)
     {
-        foreach (FelsefeDugumu dugum in tumVeriler)
+        GameObject yeniButon = Instantiate(butonPrefab, icerikPaneli);
+        RectTransform rect = yeniButon.GetComponent<RectTransform>();
+        
+        rect.anchoredPosition = pozisyon;
+        
+        yeniButon.GetComponent<ButtonControl>().KurulumYap(veri);
+        
+        return yeniButon;
+    }
+
+    public void AltDallariAc(FelsefeDugumu parentVeri, Vector2 parentPozisyon)
+    {
+        //bu ebeveyne ait çocukları listeden bul
+        List<FelsefeDugumu> cocuklar = tumVeriler.FindAll(x => x.parentId == parentVeri.id);
+        int cocukSayisi = cocuklar.Count;
+
+        if (cocukSayisi == 0) 
         {
-            Debug.Log($"ID: {dugum.id} | Parent: {dugum.parentId} | İsim: {dugum.isim} | Seviye: {dugum.seviye}");
+            Debug.Log("yaprağa ulaştın :)");
+            return;
+        }
+
+        float cocukY = parentPozisyon.y - dikeyBosluk;
+
+        for (int i = 0; i < cocukSayisi; i++)
+        {
+            float cocukX = parentPozisyon.x + (i - (cocukSayisi - 1) / 2f) * yatayBosluk;
+            Vector2 cocukPozisyon = new Vector2(cocukX, cocukY);
+
+            DugumOlustur(cocuklar[i], cocukPozisyon);
             
-            // Veri yapımızda bazı mottoların boş ("") olduğunu biliyoruz.
-            // Sadece mottosu olanları yazdırıyoruz.
-            if (!string.IsNullOrEmpty(dugum.motto))
-            {
-                Debug.Log($"   --> Motto: {dugum.motto}");
-            }
+            // çizgi eklenecek
         }
     }
 }
