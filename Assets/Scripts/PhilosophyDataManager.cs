@@ -22,23 +22,24 @@ public class FelsefeVeritabani
 
 public class PhilosophyDataManager : MonoBehaviour
 {
-    public List<FelsefeDugumu> tumVeriler = new List<FelsefeDugumu>();
+    public List<FelsefeDugumu> tumVeriler = new List<FelsefeDugumu>();//jsondaki verilerli tutacak 
     
     [Header("UI Ayarları")]
     public GameObject butonPrefab;
     public RectTransform icerikPaneli;
     
     [Header("Ağaç Boşluk Ayarları")]
-    public float yatayBosluk = 300f; 
+    public float yatayBosluk = 500f; 
     public float dikeyBosluk = 200f; 
 
     void Start()
     {
-        VerileriYukle();
+        VerileriYukle();//jsonu oku verileri listeye at
+        //root dugumu bulup oluşturuyoruz
         FelsefeDugumu rootDugum = tumVeriler.Find(x => x.parentId == 0);
         if (rootDugum != null)
         {
-            DugumOlustur(rootDugum, new Vector2(0, -50));
+            DugumOlustur(rootDugum, new Vector2(0, Screen.height/2-100));
         }
     }
 
@@ -64,16 +65,16 @@ public class PhilosophyDataManager : MonoBehaviour
         return yeniButon;
     }
 
-    public void AltDallariAc(FelsefeDugumu parentVeri, Vector2 parentPozisyon)
+    public List<GameObject> AltDallariAc(FelsefeDugumu parentVeri, Vector2 parentPozisyon)
     {
         //bu ebeveyne ait çocukları listeden bul
+        List<GameObject> olusturulanButonlar = new List<GameObject>();
         List<FelsefeDugumu> cocuklar = tumVeriler.FindAll(x => x.parentId == parentVeri.id);
         int cocukSayisi = cocuklar.Count;
 
         if (cocukSayisi == 0) 
         {
-            Debug.Log("yaprağa ulaştın :)");
-            return;
+            return olusturulanButonlar;
         }
 
         float cocukY = parentPozisyon.y - dikeyBosluk;
@@ -83,9 +84,10 @@ public class PhilosophyDataManager : MonoBehaviour
             float cocukX = parentPozisyon.x + (i - (cocukSayisi - 1) / 2f) * yatayBosluk;
             Vector2 cocukPozisyon = new Vector2(cocukX, cocukY);
 
-            DugumOlustur(cocuklar[i], cocukPozisyon);
+            olusturulanButonlar.Add(DugumOlustur(cocuklar[i], cocukPozisyon));
             
             // çizgi eklenecek
         }
+        return olusturulanButonlar;
     }
 }
