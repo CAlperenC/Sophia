@@ -10,7 +10,8 @@ public class FelsefeDugumu
     public string isim;
     public string motto;
     public string aciklama;
-    public int[] baglantilar;
+    public string resimDosyaAdi; 
+    public string wikiLinki;
 }
 
 [System.Serializable]
@@ -22,6 +23,7 @@ public class FelsefeVeritabani
 
 public class PhilosophyDataManager : MonoBehaviour
 {
+    public static PhilosophyDataManager philosophyDataManager;
     public List<FelsefeDugumu> tumVeriler = new List<FelsefeDugumu>();//jsondaki verilerli tutacak 
     
     [Header("UI Ayarları")]
@@ -32,14 +34,22 @@ public class PhilosophyDataManager : MonoBehaviour
     public float yatayBosluk = 500f; 
     public float dikeyBosluk = 200f; 
 
+    [Header("Çizgi Ayarları")]
+    public GameObject cizgiPrefab; 
+    public float cizgiKalinligi = 8f;
+
     void Start()
     {
+        if(philosophyDataManager== null)
+        {
+            philosophyDataManager = this;
+        }
         VerileriYukle();//jsonu oku verileri listeye at
         //root dugumu bulup oluşturuyoruz
         FelsefeDugumu rootDugum = tumVeriler.Find(x => x.parentId == 0);
         if (rootDugum != null)
         {
-            DugumOlustur(rootDugum, new Vector2(0, Screen.height/2-100));
+            DugumOlustur(rootDugum, new Vector2(0, 3600/2-100));//3600 icerik paneli uzunluğudur.
         }
     }
 
@@ -74,6 +84,7 @@ public class PhilosophyDataManager : MonoBehaviour
 
         if (cocukSayisi == 0) 
         {
+            BilgiPanel.bilgiPanel.PaneliAc(parentVeri);
             return olusturulanButonlar;
         }
 
@@ -84,9 +95,29 @@ public class PhilosophyDataManager : MonoBehaviour
             float cocukX = parentPozisyon.x + (i - (cocukSayisi - 1) / 2f) * yatayBosluk;
             Vector2 cocukPozisyon = new Vector2(cocukX, cocukY);
 
-            olusturulanButonlar.Add(DugumOlustur(cocuklar[i], cocukPozisyon));
+            //Çizgi hesap bölümü
+            GameObject yeniCizgi = Instantiate(cizgiPrefab, icerikPaneli);
+            yeniCizgi.transform.SetAsFirstSibling(); 
             
-            // çizgi eklenecek
+            RectTransform cizgiRect = yeniCizgi.GetComponent<RectTransform>();
+
+            Vector2 yon = cocukPozisyon - parentPozisyon;
+            float mesafe = yon.magnitude;
+            float aci = Mathf.Atan2(yon.y, yon.x) * Mathf.Rad2Deg;
+
+            // çizgiyi butonların ortasına yerleştir
+            cizgiRect.anchoredPosition = parentPozisyon + (yon / 2f);
+            
+            //uzunluk ve kalınlık ayarla
+            cizgiRect.sizeDelta = new Vector2(mesafe, cizgiKalinligi);
+            
+            // açıyı ayarla
+            cizgiRect.localRotation = Quaternion.Euler(0, 0, aci);
+            //
+
+            GameObject yenibuton = DugumOlustur(cocuklar[i], cocukPozisyon);
+            olusturulanButonlar.Add(yenibuton);
+            yenibuton.GetComponent<ButtonControl>().cizgi = yeniCizgi;//çizgiyi işaret ettiği butonun scriptine referansını ekliyoruz ki butonu silerken çizgiyi de silebilelim
         }
         return olusturulanButonlar;
     }

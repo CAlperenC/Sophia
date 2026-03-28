@@ -12,7 +12,8 @@ public class ButtonControl : MonoBehaviour
     public bool isOpen = false;
     public  List<GameObject> altButonlar = new List<GameObject>();
     private RectTransform rectTransform;
-    private PhilosophyDataManager manager;
+    
+    public GameObject cizgi;
 
     public void KurulumYap(FelsefeDugumu veri)
     {
@@ -20,21 +21,21 @@ public class ButtonControl : MonoBehaviour
         butonMetni.text = veri.isim;
         
         rectTransform = GetComponent<RectTransform>();
-        manager = FindFirstObjectByType<PhilosophyDataManager>();
-        //GetComponent<Button>().onClick.AddListener(Tiklandiginda);
     }
 
     public void Tiklandiginda()
     {
         if(!isOpen){
             //alt dallar açılacak 
-            altButonlar = manager.AltDallariAc(benimVerim, rectTransform.anchoredPosition);
-            isOpen = true;
+            altButonlar = PhilosophyDataManager.philosophyDataManager.AltDallariAc(benimVerim,rectTransform.anchoredPosition);
+            if(altButonlar.Count>=1){
+                isOpen = true;
+            }
         }
         else
         {
-            AltButonlarıKapat();
             // alt dallar kapanacak
+            AltButonlarıKapat();
         }
     }
 
@@ -48,6 +49,7 @@ public class ButtonControl : MonoBehaviour
                 {
                     btncntrl.AltButonlarıKapat();
                 }
+                Destroy(btncntrl.cizgi);
             }
             else
             {
