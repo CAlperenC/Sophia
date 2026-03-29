@@ -125,6 +125,10 @@ Veri saklama formatı olarak JSON tercih etme sebeplerimiz:
 - Çözüm olarak kullanılan tasarım örüntüsü: Ağaç sahnesindeki manager scriptleri singleton tasarım örüntüsüne göre yazılmıştır. Bu sayede sahneye bir instance eklenerek diğer objelerin bu managerın static instanceına erişmesi sağlanmıştır. 
 UML diyagramı bu örüntüye uygun olarak manager objesinin birden fazla instanceının olmamasına dikkat edilerek hazırlanmıştır.
 
+- Karşılaşılan problem: Ağaç sahnesinde yeni dallar oluşturulurken butonları instantiate etmemiz gerkemektedir.
+- Çözüm olarak kullanılan tasarım örüntüsü: Ağaç sahnesinde kullanılan PhilosophyDataManager scriptine factory olarak kullanılacak bir DugumOlustur() metodu eklenmiştir. Bu metod çağrıldığında kendine verilen pozisyonda buton oluşturup o butonun scriptine
+parametre olarak aldığı verileri koyup butonu return eder.
+
 ## Görev Matrisi
 
 | **Döküman Gereksinimleri** | **Görev Alan Üye**                       |
