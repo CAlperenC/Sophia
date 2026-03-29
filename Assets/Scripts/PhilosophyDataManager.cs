@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class FelsefeDugumu
 {
     public int id;
+    
     public int parentId;
     public string seviye;
     public string isim;
