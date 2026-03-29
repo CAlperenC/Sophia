@@ -1,4 +1,4 @@
-# Gereksinimler Dökümanı
+# Gereksinimler Dokümanı
 
 ## Fonksiyonel Gereksinimler:
 - Kullanıcı filozof kategorileri arasında dolanabilmeli.
