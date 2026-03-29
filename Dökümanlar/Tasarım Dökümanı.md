@@ -120,6 +120,11 @@ Veri saklama formatı olarak JSON tercih etme sebeplerimiz:
 - Herhangi bir metin editörü ile düzenlenebilmesi.
 - Basit bir organizasyonunun olması.
 
+### Tasarım Örüntüsü ile İlgili Kararlar
+- Karşılaşılan problem: Unity scriptlerinin birbirlerinin referansına ihtiyaç duyması. 
+- Çözüm olarak kullanılan tasarım örüntüsü: Ağaç sahnesindeki manager scriptleri singleton tasarım örüntüsüne göre yazılmıştır. Bu sayede sahneye bir instance eklenerek diğer objelerin bu managerın static instanceına erişmesi sağlanmıştır. 
+UML diyagramı bu örüntüye uygun olarak manager objesinin birden fazla instanceının olmamasına dikkat edilerek hazırlanmıştır.
+
 ## Görev Matrisi
 
 | **Döküman Gereksinimleri** | **Görev Alan Üye**                       |
