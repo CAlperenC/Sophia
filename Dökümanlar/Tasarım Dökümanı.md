@@ -30,30 +30,30 @@ Assets klasörü içerisinde arayüzde kullanılan asset'ler bulunacaktır.
 │   └── Tree_Scene
 ├── Scripts/
 │   ├── TestManager.cs
-│   ├── TreeManager.cs
-│   └── JSONManager.cs
+│   ├── PhilosophyDataManager.cs
+│   └── BilgiPanel.cs
 └── Assets
 ```
 ### Ana İmplementasyonlar
 `TestManager:` Uygulamadaki test özelliğiyle ilgili metotları içerir. Test oluşturma, Soru oluşturma, Sorular arasında geçme gibi işlemleri yönetir.
-`TreeManager:` Filozof ağacı ile ilgili metotlara sahiptir. Herhangi bir node’a tıklandığında bilgi kartları arayüzüne geçme, alt nodelara geçme gibi işlemleri yönetir. 
-`JSONManager:` JSON dosyalarına yazma ve okuma işlemlerinin metotlarını içerir.
-`Filozof:` Filozoflarla ilgili bilgileri içerir.
+`PhilosophyDataManager:` Filozof ağacı ile ilgili metotlara sahiptir. Alt nodeları açma gibi işlemleri yönetir. JSON dosyalarına yazma ve okuma işlemlerinin metotlarını içerir.
+`BilgiPanel:` Filozofların bilgilerini görüntüleme ile ilgili metotlara sahiptir.
 
 ### Bileşen Arayüzleri
 #### TestManager:
 `public void makeQuestion():` Veritabanından bilgiler alarak bunlara göre sorular oluşturur.
 `public boolean evaluateAnswer():` Bir soruya verilen cevabın doğru olup olmadığını değerlendirir.
 `public void goToMain():` Test arayüzünden ana arayüze geçişi sağlar.   
-#### TreeManager:
-`public void displayChildNodes():` Alt node'ları olan bir node’a tıklandığında alt node'ların görünmesini sağlar.
+#### PhilosophyDataManager:
+`public void AltDallariAc():` Alt node'ları olan bir node’a tıklandığında alt node'ların görünmesini sağlar.
 `public void displayInfoCards():` Bilgi kartına sahip olan bir node’a tıklandığında bu node’un bilgi kartının gösterilmesini sağlar. Bilgi kartı arayüzüne geçer.
 `public void skipFilter():` Sıradaki aşamanın atlanmasını sağlar.
-`public void goToMain():` Test arayüzünden ana arayüze geçişi sağlar.
+`public GameObject DugumOlustur(FelsefeDugumu veri, Vector2 pozisyon):` Ağaca eklenecek yeni düğümü oluşturur.
+`void VerileriYukle():` JSON dosyasındaki verileri okur.
 `public void filter(String filter):` Filtreleme kriterine göre ağacı filtreler.
-#### JSONManager:
-`public Filozof readJSON(String filename):` İsmi verilen dosyanın içinden bilgileri okur.
-`public void writeJSON(String filename,String data):` Verilen veriyi ilgili dosyaya yazar.
+#### BilgiPanel:
+`public void PaneliAc(FelsefeDugumu filozofVerisi):` Konuyla ilgili bilgilerin verileceği paneli oluşturup bilgileri yazar.
+`public void LinkeGit():` Konuyla ilgili detaylı bilginin verildiği internet adresine yönlendirir.
 ### Görsel Arayüzler
 Buradaki görseller uygulamanın planlanan arayüzüne örneklerdir.
 
@@ -86,9 +86,9 @@ Buradaki görseller uygulamanın planlanan arayüzüne örneklerdir.
 ### Senaryo Tasarımı
 Aşağıda tüm senaryoların tasarımı ile ilgili bilgiler verilmiştir.
 
-**Ağaç Benzeri Yapıda Gezinme:** Arayüz katmanında `Agac` arayüzü ile gerçekleştirilir. Ana arayüzdeyken `Agac` butonuna basılınca `Agac` arayüzüne geçilir. `Agac` arayüzünde ağacın dallarına tıklandığında mantık katmanından `readJSON()` fonksiyonu çağrılır ve veri katmanından veriler alınarak arayüze yazılır.
+**Ağaç Benzeri Yapıda Gezinme:** Arayüz katmanında `Agac` arayüzü ile gerçekleştirilir. Ana arayüzdeyken `Agac` butonuna basılınca `Agac` arayüzüne geçilir. `Agac` arayüzünde ağacın dallarına tıklandığında mantık katmanından `AltDallariAc()` fonksiyonu çağrılır ve veri katmanından veriler alınarak arayüze yazılır.
 
-**Filozofa Tıklandığı Zaman Detaylı Görünümünü Vermesi:** Bu senaryonun gerçekleştirilmesi için `Agac` arayüzünde bir filozofa tıklandığında `readJSON()` fonksiyonu çağrılarak ilgili bilgi okunur ve arayüzde bilgi kartına yazılır.
+**Filozofa Tıklandığı Zaman Detaylı Görünümünü Vermesi:** Bu senaryonun gerçekleştirilmesi için `Agac` arayüzünde bir filozofa tıklandığında `PaneliAc()` fonksiyonu çağrılarak ilgili bilgi okunur ve arayüzde bilgi paneline yazılır.
 
 **Akıma Göre Filozof Filtreleme:** `Agac` arayüzünde iken filtreleme kriterleri seçildikten sonra `Filtrele` butonuna basınca mantık katmanından `filter()` fonksiyonunu çağırarak `Agac` arayüzünde gerekli değişiklikler yapılacaktır.
 
