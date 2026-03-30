@@ -1,4 +1,4 @@
-# Proje Plan Dökümanı
+# Proje Plan Dokümanı
 
 ## İçindekiler:
 1. Proje Kapsamı  
@@ -60,7 +60,7 @@ Projede 3 geliştirici çalışacaktır. Bu geliştiricilerin hepsi proje ömrü
 
 ## Proje Görev Matrisi
 
-| **Döküman Gereksinimleri** | **Görev Alan Üye**     |
+| **Doküman Gereksinimleri** | **Görev Alan Üye**     |
 | -------------------------- | ---------------------- |
 | Proje İsmi                 | Bütün Ekip             |
 | Proje Organizasyonu        | Bütün Ekip             |

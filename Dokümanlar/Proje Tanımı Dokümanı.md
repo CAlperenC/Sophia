@@ -1,4 +1,4 @@
-# Proje Tanımı Dökümanı
+# Proje Tanımı Dokümanı
 ### Proje Adı: Sophia
 
 ## İçindekiler:
@@ -50,7 +50,7 @@ Projenin başarı kriterleri şunlardır:
 
 ## Proje Görev Matrisi
 
-| **Döküman Gereksinimleri**         | **Görev Alan Üye**     |
+| **Doküman Gereksinimleri**         | **Görev Alan Üye**     |
 | ---------------------------------- | ---------------------- |
 | Proje İsmi                         | Bütün Ekip             |
 | Proje Özeti                        | Mustafa Alperen Coşkun |

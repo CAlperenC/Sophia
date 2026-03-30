@@ -67,7 +67,7 @@ Tanımlanan kalite faktörleri, açıklamaları ve metrikleri:
 Hata takibi için Github Issues kullanılacaktır. Test sırasında ortaya çıkan hatalar şu formatla Github Issues’a yazılacaktır: ID-Ciddiyet-Yeniden Üretme Adımları-Beklenen vs. Gerçekleşen Sonuç-Ekran Görüntüsü/Log. Hatalar raporlandıktan sonra İnceleme-Çözülme-Doğrulama işlemlerinden geçirilerek hatanın çözümü sağlanacaktır.
 ## Görev Matrisi
 
-| **Döküman Gereksinimleri**      | **Görev Alan Üye**                   |
+| **Doküman Gereksinimleri**      | **Görev Alan Üye**                   |
 | ------------------------------- | ------------------------------------ |
 | Genel Bakış                     | Mustafa Alperen Coşkun               |
 | Uygulanan Test Metotlar         | Mustafa Alperen Coşkun               |

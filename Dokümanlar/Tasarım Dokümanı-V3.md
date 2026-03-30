@@ -1,4 +1,4 @@
-# Tasarım Dökümanı
+# Tasarım Dokümanı
 ## İçindekiler:
 1. Sisteme Genel Bakış
 2. İmplementasyon Detayları
@@ -131,7 +131,7 @@ parametre olarak aldığı verileri koyup butonu return eder.
 
 ## Görev Matrisi
 
-| **Döküman Gereksinimleri** | **Görev Alan Üye**                       |
+| **Doküman Gereksinimleri** | **Görev Alan Üye**                       |
 | -------------------------- | ---------------------------------------- |
 | Projenin Özeti             | Mustafa Alperen Coşkun ve Emre Karaduman |
 | Sistem Mimarisi            | Mustafa Alperen Coşkun ve Emre Karaduman |
