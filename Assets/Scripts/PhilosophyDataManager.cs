@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class FelsefeDugumu
@@ -26,7 +27,8 @@ public class PhilosophyDataManager : MonoBehaviour
 {
     public static PhilosophyDataManager philosophyDataManager;
     public List<FelsefeDugumu> tumVeriler = new List<FelsefeDugumu>();//jsondaki verilerli tutacak 
-    
+    public List<ButtonControl> ekrandakiAktifDugumlerListesi = new List<ButtonControl>();//bir butona tıklanınca kardeş butondaki dalları kapatacak
+
     [Header("UI Ayarları")]
     public GameObject butonPrefab;
     public RectTransform icerikPaneli;
@@ -72,12 +74,13 @@ public class PhilosophyDataManager : MonoBehaviour
         rect.anchoredPosition = pozisyon;
         
         yeniButon.GetComponent<ButtonControl>().KurulumYap(veri);
-        
+        ekrandakiAktifDugumlerListesi.Add(yeniButon.GetComponent<ButtonControl>());
         return yeniButon;
     }
 
     public List<GameObject> AltDallariAc(FelsefeDugumu parentVeri, Vector2 parentPozisyon)
     {
+        BaskaDallariKapat(parentVeri.parentId,parentVeri.id);// aynı seviyedeki diğer dalları kapadık
         //bu ebeveyne ait çocukları listeden bul
         List<GameObject> olusturulanButonlar = new List<GameObject>();
         List<FelsefeDugumu> cocuklar = tumVeriler.FindAll(x => x.parentId == parentVeri.id);
@@ -122,4 +125,74 @@ public class PhilosophyDataManager : MonoBehaviour
         }
         return olusturulanButonlar;
     }
+
+    public void BaskaDallariKapat(int tiklananDugumParentId, int tiklananDugumId)
+    {
+
+        for (int i = ekrandakiAktifDugumlerListesi.Count - 1; i >= 0; i--)
+        {
+            var dugum = ekrandakiAktifDugumlerListesi[i];
+
+            if (dugum.benimVerim.parentId == tiklananDugumParentId && dugum.benimVerim.id != tiklananDugumId)
+            {
+                dugum.AltButonlarıKapat();
+                dugum.altbutonlarAcildi_Kapandi(false);//kapandi ->gerekli kapnma işlemlerini yapıyor instance variableları falan ayarlıyor
+            }
+        }
+    }
+
+    //overloaded alt dalları aç -> katman atlama özelliği için overload yaptık
+    public List<GameObject> AltDallariAc(FelsefeDugumu parentVeri, List<int> cocuguacilacakIDler, Vector2 parentPozisyon)
+    {
+        BaskaDallariKapat(parentVeri.parentId,parentVeri.id);// aynı seviyedeki diğer dalları kapadık
+        //bu ebeveyne ait çocukları listeden bul
+        List<GameObject> olusturulanButonlar = new List<GameObject>();
+        List<FelsefeDugumu> cocuklar = new List<FelsefeDugumu>();
+        foreach (int id in cocuguacilacakIDler)
+        {
+            cocuklar.AddRange(tumVeriler.FindAll(x => x.parentId == id));
+        }
+
+        int cocukSayisi = cocuklar.Count;
+
+        if (cocukSayisi == 0) 
+        {
+            BilgiPanel.bilgiPanel.PaneliAc(parentVeri);
+            return olusturulanButonlar;
+        }
+
+        float cocukY = parentPozisyon.y - dikeyBosluk;
+
+        for (int i = 0; i < cocukSayisi; i++)
+        {
+            float cocukX = parentPozisyon.x + (i - (cocukSayisi - 1) / 2f) * yatayBosluk;
+            Vector2 cocukPozisyon = new Vector2(cocukX, cocukY);
+
+            //Çizgi hesap bölümü
+            GameObject yeniCizgi = Instantiate(cizgiPrefab, icerikPaneli);
+            yeniCizgi.transform.SetAsFirstSibling(); 
+            
+            RectTransform cizgiRect = yeniCizgi.GetComponent<RectTransform>();
+
+            Vector2 yon = cocukPozisyon - parentPozisyon;
+            float mesafe = yon.magnitude;
+            float aci = Mathf.Atan2(yon.y, yon.x) * Mathf.Rad2Deg;
+
+            // çizgiyi butonların ortasına yerleştir
+            cizgiRect.anchoredPosition = parentPozisyon + (yon / 2f);
+            
+            //uzunluk ve kalınlık ayarla
+            cizgiRect.sizeDelta = new Vector2(mesafe, cizgiKalinligi);
+            
+            // açıyı ayarla
+            cizgiRect.localRotation = Quaternion.Euler(0, 0, aci);
+            //
+
+            GameObject yenibuton = DugumOlustur(cocuklar[i], cocukPozisyon);
+            olusturulanButonlar.Add(yenibuton);
+            yenibuton.GetComponent<ButtonControl>().cizgi = yeniCizgi;//çizgiyi işaret ettiği butonun scriptine referansını ekliyoruz ki butonu silerken çizgiyi de silebilelim
+        }
+        return olusturulanButonlar;
+    }
+
 }

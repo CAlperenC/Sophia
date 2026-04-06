@@ -493,6 +493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PhilosophyDataManager
   tumVeriler: []
+  ekrandakiAktifDugumlerListesi: []
   butonPrefab: {fileID: 4508046300754939765, guid: 347da727e2007e641b692a1b2434a9b5, type: 3}
   icerikPaneli: {fileID: 1484379392}
   yatayBosluk: 300
@@ -1044,8 +1045,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -539.8125, y: 0}
-  m_SizeDelta: {x: 3000, y: 3600}
+  m_AnchoredPosition: {x: -540, y: 0}
+  m_SizeDelta: {x: 14000, y: 3600}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1484379393
 MonoBehaviour:
