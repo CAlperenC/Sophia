@@ -1,67 +1,135 @@
 {
   "dugumler": [
-    {
-      "id": 1, "parentId": 0, "isim": "Felsefe", "motto": "Düşünüyorum, öyleyse varım.", "aciklama": "Varlığı, bilgiyi, gerçeği, doğruluğu, aklı ve değerleri anlamak için yapılan kapsamlı disiplin.", "resimDosyaAdi": "", "wikiLinki": ""
-    },
-    {
-      "id": 2, "parentId": 1, "isim": "Bilgi (Epistemoloji)", "motto": "", "aciklama": "Bilginin doğasını, kaynağını ve sınırlarını inceleyen felsefe dalı. 'Neyi bilebiliriz?' sorusuna yanıt arar.", "resimDosyaAdi": "", "wikiLinki": ""
-    },
-    {
-      "id": 3, "parentId": 1, "isim": "Ahlak (Etik)", "motto": "", "aciklama": "İnsan eylemlerinin değerini, iyi ve kötü kavramlarını, erdemi ve ahlaki sorumluluğu inceleyen felsefe dalı.", "resimDosyaAdi": "", "wikiLinki": ""
-    },
-    {
-      "id": 4, "parentId": 1, "isim": "Varlık (Ontoloji)", "motto": "", "aciklama": "Varlığın ne olduğunu, varoluşun temel kategorilerini ve gerçekliğin doğasını inceleyen alan.", "resimDosyaAdi": "", "wikiLinki": ""
-    },
-    {
-      "id": 5, "parentId": 1, "isim": "Estetik", "motto": "", "aciklama": "Güzelliğin doğasını, sanatın ne olduğunu ve estetik yargıların nasıl oluştuğunu sorgulayan disiplin.", "resimDosyaAdi": "", "wikiLinki": ""
-    },
-    {
-      "id": 6, "parentId": 2, "isim": "Antik Çağ (Rasyonalizm)", "motto": "", "aciklama": "Doğru bilgiye duyularla değil, yalnızca akıl yoluyla ulaşılabileceğini savunan İlk Çağ düşünce sistemi.", "resimDosyaAdi": "", "wikiLinki": ""
-    },
-    {
-      "id": 7, "parentId": 6, "isim": "Sokrates", "motto": "Sorgulanmamış bir hayat, yaşanmaya değmez.", "aciklama": "Antik Yunan felsefesinin kurucularındandır. İnsanların bildiklerini sandıkları şeyleri aslında bilmediklerini göstermek için 'Sokratik İroni' yöntemini kullanmıştır.", "resimDosyaAdi": "sokrates_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Sokrates"
-    },
-    {
-      "id": 8, "parentId": 6, "isim": "Platon", "motto": "Görünenler aldatıcıdır, asıl gerçeklik idealardır.", "aciklama": "İdealar kuramının kurucusudur. Yaşadığımız duyular dünyasının, mükemmel ve değişmez olan 'İdealar Dünyası'nın sadece soluk bir kopyası olduğunu savunur.", "resimDosyaAdi": "platon_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Platon"
-    },
-    {
-      "id": 9, "parentId": 2, "isim": "17. ve 18. Yüzyıl (Modern)", "motto": "", "aciklama": "Bilimsel devrimlerin etkisiyle bilginin kaynağının akıl mı (Rasyonalizm) yoksa deneyim mi (Empirizm) olduğu tartışmalarının zirve yaptığı dönem.", "resimDosyaAdi": "", "wikiLinki": ""
-    },
-    {
-      "id": 10, "parentId": 9, "isim": "René Descartes", "motto": "Düşünüyorum, öyleyse varım.", "aciklama": "Modern felsefenin babası kabul edilir. Her şeyden şüphe ederek (Metodik Şüphe) sarsılmaz ve kesin bilgiye ulaşmayı amaçlamıştır.", "resimDosyaAdi": "descartes_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/René_Descartes"
-    },
-    {
-      "id": 11, "parentId": 9, "isim": "John Locke", "motto": "İnsan zihni doğuştan boş bir levhadır (Tabula Rasa).", "aciklama": "Empirizm (Deneyimcilik) akımının kurucusudur. Bütün bilgilerimizin doğuştan gelmediğini, sonradan deneyim ve duyumlar aracılığıyla kazanıldığını savunur.", "resimDosyaAdi": "locke_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/John_Locke"
-    },
-    {
-      "id": 12, "parentId": 9, "isim": "Immanuel Kant", "motto": "Kendi aklını kullanma cesaretini göster!", "aciklama": "Rasyonalizm ve Empirizmi birleştirerek 'Kritisizm' (Eleştirel Felsefe) akımını kurmuştur. Bilginin deneyle başladığını ancak sadece deneyden ibaret olmadığını, zihnin kategorilerinin de gerekli olduğunu belirtir.", "resimDosyaAdi": "kant_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Immanuel_Kant"
-    },
-    {
-      "id": 13, "parentId": 3, "isim": "Helenistik Dönem", "motto": "", "aciklama": "Büyük İskender imparatorluğu sonrası, bireyin iç huzurunu ve mutluluğunu merkeze alan ahlak okullarının doğduğu dönem.", "resimDosyaAdi": "", "wikiLinki": ""
-    },
-    {
-      "id": 14, "parentId": 13, "isim": "Epikuros", "motto": "Ölüm varken biz yokuz, biz varken ölüm yok. Öyleyse korkacak ne var?", "aciklama": "Hazcılık (Hedonizm) okulunun kurucusudur. Ancak onun kastettiği haz, anlık bedensel zevkler değil, ruhun acıdan ve korkudan arınmış dinginlik halidir (Ataraksiya).", "resimDosyaAdi": "epikuros_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Epikuros"
-    },
-    {
-      "id": 15, "parentId": 13, "isim": "Kıbrıslı Zenon", "motto": "Değiştiremeyeceğin şeyler için üzülme, sadece kendi tepkilerini kontrol et.", "aciklama": "Stoacılık okulunun kurucusudur. İnsanın doğaya uygun, erdemli ve akılcı bir yaşam sürmesi gerektiğini; dışsal olaylara karşı duygusal tepkisizlik (Apatheia) geliştirmesini öğütler.", "resimDosyaAdi": "zenon_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Kıbrıslı_Zenon"
-    },
-    {
-      "id": 16, "parentId": 3, "isim": "19. ve 20. Yüzyıl", "motto": "", "aciklama": "Geleneksel ahlak değerlerinin yıkıldığı, bireyin kendi değerlerini yaratması gerektiğinin (Varoluşçuluk ve Nihilizm) savunulduğu modern dönem.", "resimDosyaAdi": "", "wikiLinki": ""
-    },
-    {
-      "id": 17, "parentId": 16, "isim": "Friedrich Nietzsche", "motto": "Beni öldürmeyen şey, beni güçlendirir.", "aciklama": "Geleneksel ahlak anlayışını bir 'sürü ahlakı' olarak reddeder. İnsanın kendi değerlerini kendisinin yaratıp aşarak 'Üstinsan' (Übermensch) mertebesine ulaşması gerektiğini savunur.", "resimDosyaAdi": "nietzsche_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Friedrich_Nietzsche"
-    },
-    {
-      "id": 18, "parentId": 16, "isim": "Jean-Paul Sartre", "motto": "Varoluş, özden önce gelir.", "aciklama": "Varoluşçuluk akımının öncülerindendir. İnsanın önceden belirlenmiş bir kaderi (özü) olmadığını, dünyaya fırlatıldığını ve yaptığı seçimlerle kendi özünü kendisinin yarattığını söyler.", "resimDosyaAdi": "sartre_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Jean-Paul_Sartre"
-    },
-    {
-      "id": 19, "parentId": 4, "isim": "Doğa Filozofları", "motto": "", "aciklama": "Evrenin ana maddesinin (Arkhe) ne olduğunu mitolojiyle değil, gözlem ve akılla açıklamaya çalışan ilk düşünürler.", "resimDosyaAdi": "", "wikiLinki": ""
-    },
-    {
-      "id": 20, "parentId": 19, "isim": "Thales", "motto": "Her şeyin kökeni sudur.", "aciklama": "Felsefenin ve bilimin öncüsü sayılır. Evrendeki çokluğun arkasındaki tek ve temel prensibin (Arkhe) 'su' olduğunu öne sürmüştür.", "resimDosyaAdi": "thales_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Thales"
-    },
-    {
-      "id": 21, "parentId": 19, "isim": "Herakleitos", "motto": "Aynı nehirde iki kez yıkanılmaz.", "aciklama": "Evrenin sürekli bir değişim (Oluş) içinde olduğunu ve bu değişimin zıtların çatışmasından doğduğunu savunur. Arkhe olarak 'Ateş'i belirlemiştir.", "resimDosyaAdi": "herakleitos_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Herakleitos"
-    }
+    { "id": 1, "parentId": 0, "isim": "Felsefe", "motto": "Düşünüyorum, öyleyse varım.", "aciklama": "Varlığı, bilgiyi, gerçeği, doğruluğu, aklı ve değerleri anlamak için yapılan kapsamlı disiplin.", "resimDosyaAdi": "", "wikiLinki": "" },
+    
+    { "id": 2, "parentId": 1, "isim": "Metafizik (Ontoloji)", "motto": "", "aciklama": "Varlığın doğasını, ilk prensipleri, uzay ve zamanı inceleyen temel dal.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 3, "parentId": 1, "isim": "Epistemoloji", "motto": "", "aciklama": "Bilginin doğasını, kaynağını, sınırlarını ve geçerliliğini inceleyen dal.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 4, "parentId": 1, "isim": "Etik", "motto": "", "aciklama": "İnsan eylemlerinin değerini, iyi ve kötü kavramlarını, erdemi inceleyen dal.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 5, "parentId": 1, "isim": "Mantık", "motto": "", "aciklama": "Doğru düşünmenin ve geçerli argümanlar kurmanın kurallarını inceleyen disiplin.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 6, "parentId": 1, "isim": "Estetik", "motto": "", "aciklama": "Güzelliğin doğasını ve sanatın ne olduğunu sorgulayan disiplin.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 7, "parentId": 1, "isim": "Politik Felsefe", "motto": "", "aciklama": "Devlet, adalet, mülkiyet ve hukukun doğasını inceleyen dal.", "resimDosyaAdi": "", "wikiLinki": "" },
+
+    { "id": 8, "parentId": 3, "isim": "Bilginin Kaynağı", "motto": "", "aciklama": "İnsan bilgisinin nereden geldiğini ve nasıl elde edildiğini sorgulayan alt dal.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 9, "parentId": 3, "isim": "Bilginin Sınırları", "motto": "", "aciklama": "İnsan zihninin neleri bilip neleri bilemeyeceğini tartışan alt dal.", "resimDosyaAdi": "", "wikiLinki": "" },
+
+    { "id": 10, "parentId": 8, "isim": "İlk Çağ", "motto": "", "aciklama": "Bilginin kaynağının akıl mı yoksa duyular mı olduğunun tartışılmaya başlandığı antik dönem.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 11, "parentId": 8, "isim": "Modern Çağ", "motto": "", "aciklama": "Bilimsel devrim sonrası bilginin metodolojisinin kesin çizgilerle ayrıldığı dönem.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 12, "parentId": 9, "isim": "Çağdaş Dönem", "motto": "", "aciklama": "19. yüzyıl sonrası, mutlak bilginin reddedildiği ve faydanın merkeze alındığı dönem.", "resimDosyaAdi": "", "wikiLinki": "" },
+
+    { "id": 13, "parentId": 10, "isim": "Rasyonalizm (Akılcılık)", "motto": "", "aciklama": "Doğru bilginin kaynağının yalnızca akıl olduğunu savunan akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 14, "parentId": 10, "isim": "Sofizm (Görececilik)", "motto": "", "aciklama": "Kesin bilginin imkansız olduğunu, bilginin kişiden kişiye değiştiğini savunan akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 15, "parentId": 11, "isim": "Empirizm (Deneyimcilik)", "motto": "", "aciklama": "Zihnin doğuştan boş bir levha olduğunu, tüm bilgilerin deneyimden geldiğini savunan akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 16, "parentId": 11, "isim": "Kritisizm (Eleştirelcilik)", "motto": "", "aciklama": "Akıl ve deneyin sentezlenmesi gerektiğini savunan akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 17, "parentId": 12, "isim": "Pragmatizm", "motto": "", "aciklama": "Bir bilginin doğruluğunun, sağladığı pratik faydaya göre ölçüldüğü akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+
+    { "id": 18, "parentId": 13, "isim": "Sokrates", "motto": "Bildiğim tek şey, hiçbir şey bilmediğimdir.", "aciklama": "Soru sorma yöntemiyle doğuştan var olan bilgiyi açığa çıkardığına inanır.", "resimDosyaAdi": "sokrates_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Sokrates" },
+    { "id": 19, "parentId": 13, "isim": "Platon", "motto": "Görünenler aldatıcıdır, asıl gerçeklik idealardır.", "aciklama": "Gerçek bilginin duyularla değil, ancak İdealar dünyasını kavramakla mümkün olduğunu savunur.", "resimDosyaAdi": "platon_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Platon" },
+    { "id": 20, "parentId": 14, "isim": "Protagoras", "motto": "İnsan her şeyin ölçüsüdür.", "aciklama": "Mutlak doğrunun olmadığını, algıların kişiye özel olduğunu savunur.", "resimDosyaAdi": "protagoras_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Protagoras" },
+    { "id": 21, "parentId": 15, "isim": "John Locke", "motto": "İnsan zihni doğuştan boş bir levhadır (Tabula Rasa).", "aciklama": "Deneyimciliğin kurucularındandır.", "resimDosyaAdi": "locke_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/John_Locke" },
+    { "id": 22, "parentId": 15, "isim": "David Hume", "motto": "Alışkanlık, insan hayatının en büyük kılavuzudur.", "aciklama": "Nedensellik ilkesinin bile bir alışkanlıktan ibaret olduğunu savunmuştur.", "resimDosyaAdi": "hume_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/David_Hume" },
+    { "id": 23, "parentId": 16, "isim": "Immanuel Kant", "motto": "Algısız kavramlar boş, kavramsız algılar kördür.", "aciklama": "Bilginin deneyle başladığını ama sadece deneyden ibaret olmadığını savunur.", "resimDosyaAdi": "kant_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Immanuel_Kant" },
+    { "id": 24, "parentId": 17, "isim": "William James", "motto": "Hakikat, düşüncelerimizin işe yarayan kısmıdır.", "aciklama": "Pragmatizm akımının en önemli temsilcilerindendir.", "resimDosyaAdi": "james_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/William_James" },
+
+    { "id": 25, "parentId": 4, "isim": "Normatif Etik", "motto": "", "aciklama": "Neyin ahlaken doğru veya yanlış olduğunu belirleyen kuralları arayan alt dal.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 26, "parentId": 4, "isim": "Uygulamalı Etik", "motto": "", "aciklama": "Tıp, çevre, iş dünyası gibi spesifik alanlardaki ahlaki sorunları inceleyen alt dal.", "resimDosyaAdi": "", "wikiLinki": "" },
+
+    { "id": 27, "parentId": 25, "isim": "Antik Dönem", "motto": "", "aciklama": "Erdemli bir yaşamın nasıl olması gerektiğinin sorgulandığı dönem.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 28, "parentId": 25, "isim": "Helenistik Dönem", "motto": "", "aciklama": "Bireyin iç huzurunu ve mutluluğunu merkeze alan etik arayışların dönemi.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 29, "parentId": 25, "isim": "Modern Dönem", "motto": "", "aciklama": "Evrensel ahlak yasalarının akıl yoluyla temellendirilmeye çalışıldığı dönem.", "resimDosyaAdi": "", "wikiLinki": "" },
+
+    { "id": 30, "parentId": 27, "isim": "Erdem Etiği", "motto": "", "aciklama": "Ahlaki doğruluğu kurallara değil, kişinin karakterine ve erdemine bağlayan akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 31, "parentId": 28, "isim": "Stoacılık", "motto": "", "aciklama": "Dışsal olaylara karşı duygusal tepkisizlik ve akla uygun yaşamayı öğütleyen akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 32, "parentId": 28, "isim": "Epikürcülük", "motto": "", "aciklama": "En yüksek iyinin, acıdan uzaklaşarak elde edilen ruhsal dinginlik (haz) olduğunu savunan akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 33, "parentId": 29, "isim": "Ödev Ahlakı (Deontoloji)", "motto": "", "aciklama": "Bir eylemin ahlaki değerinin sonucuna değil, arkasındaki niyete (ödeve) bağlı olduğunu savunan akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 34, "parentId": 29, "isim": "Faydacılık (Utilitarianism)", "motto": "", "aciklama": "En fazla sayıda insan için en yüksek mutluluğu sağlayan eylemin doğru olduğunu savunan akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+
+    { "id": 35, "parentId": 30, "isim": "Aristoteles", "motto": "Mutluluk, erdeme uygun etkinliktir.", "aciklama": "Erdem etiğinin kurucusudur. 'Altın Orta' öğretisini savunur.", "resimDosyaAdi": "aristoteles_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Aristoteles" },
+    { "id": 36, "parentId": 31, "isim": "Epiktetos", "motto": "Bizi rahatsız eden olaylar değil, bizim onlara bakış açımızdır.", "aciklama": "Kölelikten filozofluğa uzanan yaşamıyla Stoacılığın önemli bir temsilcisidir.", "resimDosyaAdi": "epiktetos_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Epiktetos" },
+    { "id": 37, "parentId": 31, "isim": "Marcus Aurelius", "motto": "Hayatınız, düşüncelerinizin onu yaptığı şeydir.", "aciklama": "Roma imparatoru ve Stoacı filozoftur. 'Kendime Düşünceler' eserinin yazarıdır.", "resimDosyaAdi": "aurelius_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Marcus_Aurelius" },
+    { "id": 38, "parentId": 32, "isim": "Epikuros", "motto": "Ölüm varken biz yokuz, biz varken ölüm yok.", "aciklama": "Hazcılık (Hedonizm) okulunun kurucusudur ancak kastettiği haz ruhsal dinginliktir.", "resimDosyaAdi": "epikuros_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Epikuros" },
+    { "id": 39, "parentId": 34, "isim": "Jeremy Bentham", "motto": "En büyük sayıda insan için en büyük mutluluk.", "aciklama": "Faydacılığın kurucusudur. Hazları matematiksel bir hesaba dökülebilir olarak görmüştür.", "resimDosyaAdi": "bentham_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Jeremy_Bentham" },
+    { "id": 40, "parentId": 34, "isim": "John Stuart Mill", "motto": "Halinden memnun bir aptal olmaktansa, mutsuz bir Sokrates olmak yeğdir.", "aciklama": "Faydacılığı geliştirerek, zihinsel hazların bedensel hazlardan üstün olduğunu savunmuştur.", "resimDosyaAdi": "mill_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/John_Stuart_Mill" },
+
+    { "id": 41, "parentId": 2, "isim": "Ontoloji (Varlık Bilimi)", "motto": "", "aciklama": "Varlığın temel doğasını ve kategorilerini inceleyen alt dal.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 42, "parentId": 2, "isim": "Kozmoloji", "motto": "", "aciklama": "Evrenin kökeni, yapısı ve işleyişini bütünsel olarak ele alan alt dal.", "resimDosyaAdi": "", "wikiLinki": "" },
+
+    { "id": 43, "parentId": 41, "isim": "Doğa Felsefesi Dönemi", "motto": "", "aciklama": "Evrenin ana maddesinin (arkhe) ne olduğunun sorgulandığı antik dönem.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 44, "parentId": 41, "isim": "Aydınlanma Sonrası", "motto": "", "aciklama": "Varlığın akıl ve tinsel (ruhsal) boyutlarının daha çok tartışıldığı dönem.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 45, "parentId": 41, "isim": "20. Yüzyıl", "motto": "", "aciklama": "İnsan varoluşunun ve saçma (absürd) kavramının merkezde olduğu dönem.", "resimDosyaAdi": "", "wikiLinki": "" },
+
+    { "id": 46, "parentId": 43, "isim": "Monizm (Tekçilik)", "motto": "", "aciklama": "Evrenin temelinde tek bir tözün veya prensibin bulunduğunu savunan akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 47, "parentId": 43, "isim": "Oluş Felsefesi", "motto": "", "aciklama": "Durağan bir varlığın olmadığını, her şeyin sürekli bir değişim içinde olduğunu savunan akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 48, "parentId": 44, "isim": "İdealizm", "motto": "", "aciklama": "Gerçekliğin temelinde fikrin, aklın veya ruhun bulunduğunu savunan akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 49, "parentId": 45, "isim": "Varoluşçuluk", "motto": "", "aciklama": "İnsanın varoluşunun özünden önce geldiğini ve insanın kendini yarattığını savunan akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 50, "parentId": 45, "isim": "Nihilizm (Hiççilik)", "motto": "", "aciklama": "Evrensel bir gerçekliğin, anlamın veya değerin var olmadığını savunan akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+
+    { "id": 51, "parentId": 46, "isim": "Thales", "motto": "Her şeyin kökeni sudur.", "aciklama": "Felsefenin ilk düşünürü kabul edilir. Arkhe olarak suyu belirlemiştir.", "resimDosyaAdi": "thales_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Thales" },
+    { "id": 52, "parentId": 46, "isim": "Anaksimenes", "motto": "Her şeyin temeli havadır.", "aciklama": "Thales'in öğrencisidir, evrenin temelini havaya dayandırmıştır.", "resimDosyaAdi": "anaksimenes_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Anaksimenes" },
+    { "id": 53, "parentId": 47, "isim": "Herakleitos", "motto": "Aynı nehirde iki kez yıkanılmaz.", "aciklama": "Sürekli değişim ve zıtların birliği fikrini savunmuştur.", "resimDosyaAdi": "herakleitos_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Herakleitos" },
+    { "id": 54, "parentId": 48, "isim": "G.W.F. Hegel", "motto": "Akılsal olan gerçektir, gerçek olan akılsaldır.", "aciklama": "Diyalektik idealizmin kurucusudur. 'Geist' (Mutlak Ruh) kavramı merkezdedir.", "resimDosyaAdi": "hegel_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel" },
+    { "id": 55, "parentId": 49, "isim": "Jean-Paul Sartre", "motto": "İnsan, özgür olmaya mahkumdur.", "aciklama": "Varoluşçuluğun en bilinen temsilcisidir.", "resimDosyaAdi": "sartre_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Jean-Paul_Sartre" },
+    { "id": 56, "parentId": 49, "isim": "Albert Camus", "motto": "Hayatın anlamı yoktur, bu yüzden onu yaşamak gerekir.", "aciklama": "Absürdizm ve Varoluşçuluk akımlarında önemli bir figürdür.", "resimDosyaAdi": "camus_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Albert_Camus" },
+    { "id": 57, "parentId": 50, "isim": "Friedrich Nietzsche", "motto": "Beni öldürmeyen şey, beni güçlendirir.", "aciklama": "Geleneksel ahlakı yıkarak 'Üstinsan' kavramını öne sürmüştür.", "resimDosyaAdi": "nietzsche_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Friedrich_Nietzsche" },
+
+    { "id": 58, "parentId": 7, "isim": "Devletin Kökeni", "motto": "", "aciklama": "Devletin nasıl ve neden ortaya çıktığını sorgulayan alt dal.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 59, "parentId": 7, "isim": "İdeal Devlet", "motto": "", "aciklama": "Mükemmel bir toplum ve devlet düzeninin nasıl olması gerektiğini araştıran alt dal.", "resimDosyaAdi": "", "wikiLinki": "" },
+
+    { "id": 60, "parentId": 58, "isim": "Rönesans Sonrası", "motto": "", "aciklama": "Devletin ilahi bir kurum değil, insan yapısı bir organizasyon olduğunun tartışıldığı dönem.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 61, "parentId": 59, "isim": "Antik Dönem Devlet", "motto": "", "aciklama": "Erdemli bir yaşam için gerekli olan polis (şehir devleti) düzeninin kurgulandığı dönem.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 62, "parentId": 58, "isim": "19. Yüzyıl Siyaseti", "motto": "", "aciklama": "Sanayi devrimi sonrası sınıf çatışmalarının siyasete yansıdığı dönem.", "resimDosyaAdi": "", "wikiLinki": "" },
+
+    { "id": 63, "parentId": 60, "isim": "Toplum Sözleşmesi", "motto": "", "aciklama": "İnsanların güvenlik veya haklar için doğal durumdan çıkarak devleti kurduklarını savunan akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 64, "parentId": 61, "isim": "Ütopya Düşüncesi", "motto": "", "aciklama": "Gerçekte var olmayan ama olması arzulanan kusursuz toplum tasarımları.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 65, "parentId": 62, "isim": "Marksizm", "motto": "", "aciklama": "Tarihi sınıf mücadeleleri üzerinden okuyan ve komünist bir toplum tasarlayan akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+
+    { "id": 66, "parentId": 63, "isim": "Thomas Hobbes", "motto": "İnsan, insanın kurdudur.", "aciklama": "İnsan doğasının bencil olduğunu ve mutlak bir otoriteye (Leviathan) ihtiyaç duyulduğunu savunur.", "resimDosyaAdi": "hobbes_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Thomas_Hobbes" },
+    { "id": 67, "parentId": 63, "isim": "Jean-Jacques Rousseau", "motto": "İnsan özgür doğar, oysa her yerde zincirlere vurulmuştur.", "aciklama": "Eşitsizliğin kaynağını mülkiyette görür ve 'Genel İrade'yi savunur.", "resimDosyaAdi": "rousseau_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Jean-Jacques_Rousseau" },
+    { "id": 68, "parentId": 64, "isim": "Thomas More", "motto": "Her yerde özel mülkiyet olduğu sürece adalet imkansızdır.", "aciklama": "Ütopya kavramının yaratıcısıdır ve eserinde eşitlikçi bir ada ülkesi tasarlar.", "resimDosyaAdi": "more_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Thomas_More" },
+    { "id": 69, "parentId": 65, "isim": "Karl Marx", "motto": "Filozoflar dünyayı yalnızca yorumladılar; asıl olan onu değiştirmektir.", "aciklama": "Bilimsel sosyalizmin kurucusudur.", "resimDosyaAdi": "marx_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Karl_Marx" },
+    { "id": 70, "parentId": 65, "isim": "Friedrich Engels", "motto": "Devlet ortadan kaldırılmaz, o sönümlenir.", "aciklama": "Marx'ın en yakın çalışma arkadaşı ve Komünist Manifesto'nun ortak yazarıdır.", "resimDosyaAdi": "engels_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Friedrich_Engels" },
+
+    { "id": 71, "parentId": 6, "isim": "Sanat Felsefesi", "motto": "", "aciklama": "Sanat eserinin doğasını ve yaratım sürecini inceleyen alt dal.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 72, "parentId": 6, "isim": "Güzellik Felsefesi", "motto": "", "aciklama": "Doğadaki ve sanattaki güzellik kavramını sorgulayan alt dal.", "resimDosyaAdi": "", "wikiLinki": "" },
+
+    { "id": 73, "parentId": 71, "isim": "Antik Sanat Anlayışı", "motto": "", "aciklama": "Sanatın doğanın veya ideaların bir yansıması olarak görüldüğü dönem.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 74, "parentId": 72, "isim": "Aydınlanma Dönemi", "motto": "", "aciklama": "Beğeni yargılarının ve güzelliğin öznelliğinin tartışıldığı dönem.", "resimDosyaAdi": "", "wikiLinki": "" },
+
+    { "id": 75, "parentId": 73, "isim": "Mimesis (Taklit)", "motto": "", "aciklama": "Sanatın özünde gerçeğin veya doğanın taklidi olduğunu savunan akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 76, "parentId": 74, "isim": "Öznelci Estetik", "motto": "", "aciklama": "Güzelliğin nesnede değil, izleyicinin zihninde ve yargısında olduğunu savunan akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+
+    { "id": 77, "parentId": 75, "isim": "Plotinos", "motto": "Güzel olan her şey, ruhtan pay aldığı için güzeldir.", "aciklama": "Yeni Platonculuğun kurucusu olup sanatı tanrısal olanın dışavurumu olarak görmüştür.", "resimDosyaAdi": "plotinos_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Plotinos" },
+    { "id": 78, "parentId": 76, "isim": "Alexander Baumgarten", "motto": "", "aciklama": "Estetik kelimesini felsefi bir disiplin adı olarak kullanan ilk filozoftur.", "resimDosyaAdi": "baumgarten_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Alexander_Gottlieb_Baumgarten" },
+
+    { "id": 79, "parentId": 5, "isim": "Biçimsel Mantık", "motto": "", "aciklama": "Akıl yürütmenin kurallarını ve argümanların geçerliliğini inceleyen alt dal.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 80, "parentId": 5, "isim": "Sembolik Mantık", "motto": "", "aciklama": "Mantıksal önermeleri matematiksel sembollerle ifade eden modern alt dal.", "resimDosyaAdi": "", "wikiLinki": "" },
+
+    { "id": 81, "parentId": 79, "isim": "Klasik Çağ", "motto": "", "aciklama": "Kıyas (Sillojizm) yönteminin geliştirildiği ve mantığın temellerinin atıldığı dönem.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 82, "parentId": 80, "isim": "20. Yüzyıl Dönemi", "motto": "", "aciklama": "Felsefi sorunların dilsel ve mantıksal analizle çözülebileceğinin savunulduğu dönem.", "resimDosyaAdi": "", "wikiLinki": "" },
+
+    { "id": 83, "parentId": 81, "isim": "Klasik Mantık", "motto": "", "aciklama": "Aristoteles'in kurduğu, kavramlar ve önermeler üzerinden çıkarım yapan sistem.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 84, "parentId": 82, "isim": "Analitik Felsefe", "motto": "", "aciklama": "Felsefenin asıl görevinin dili mantıksal olarak analiz etmek olduğunu savunan akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+
+    { "id": 85, "parentId": 83, "isim": "Farabi", "motto": "Erdemli şehrin amacı mutluluktur.", "aciklama": "İslam felsefesinde 'İkinci Öğretmen' olarak bilinir, Aristoteles mantığını geliştirmiştir.", "resimDosyaAdi": "farabi_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Farabi" },
+    { "id": 86, "parentId": 84, "isim": "Ludwig Wittgenstein", "motto": "Dilimin sınırları, dünyamın sınırlarıdır.", "aciklama": "Analitik felsefenin en önemli figürüdür, anlam ve dil üzerine devrimsel fikirler üretmiştir.", "resimDosyaAdi": "wittgenstein_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Ludwig_Wittgenstein" },
+    { "id": 87, "parentId": 84, "isim": "Bertrand Russell", "motto": "Matematik, mantığın olgunluk çağıdır.", "aciklama": "Mantıkçı pozitivizmin öncülerinden olup Principia Mathematica eserini yazmıştır.", "resimDosyaAdi": "russell_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Bertrand_Russell" },
+
+    { "id": 88, "parentId": 10, "isim": "Plüralizm (Çoğulculuk)", "motto": "", "aciklama": "Evrenin birden fazla ana maddeden oluştuğunu savunan antik dönem akımı.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 89, "parentId": 88, "isim": "Demokritos", "motto": "Evrende sadece atomlar ve boşluk vardır.", "aciklama": "Atomculuk fikrinin kurucusudur.", "resimDosyaAdi": "demokritos_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Demokritos" },
+    { "id": 90, "parentId": 88, "isim": "Empedokles", "motto": "Her şey toprak, su, hava ve ateşten oluşur.", "aciklama": "Dört element kuramını ilk ortaya atan filozoftur.", "resimDosyaAdi": "empedokles_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Empedokles" },
+
+    { "id": 91, "parentId": 29, "isim": "Sezgicilik", "motto": "", "aciklama": "Gerçekliğin akılla değil, doğrudan bir kavrayış olan sezgiyle anlaşılabileceğini savunan akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 92, "parentId": 91, "isim": "Henri Bergson", "motto": "Gülmek, insanın özgürlüğünü hissetmesidir.", "aciklama": "Hayat atılımı (Élan vital) ve sezgi felsefesinin kurucusudur.", "resimDosyaAdi": "bergson_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Henri_Bergson" },
+    { "id": 93, "parentId": 91, "isim": "Gazali", "motto": "Akıl sadece bir alettir, asıl rehber kalptir.", "aciklama": "Şüpheyi metodik olarak kullanmış, kesin bilginin ancak sezgiyle (kalp gözü) bulunabileceğini savunmuştur.", "resimDosyaAdi": "gazali_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Gazzali" },
+
+    { "id": 94, "parentId": 62, "isim": "Anarşizm", "motto": "", "aciklama": "Devlet ve otoritenin her türlüsünü reddeden, bireysel özgürlüğü savunan politik akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 95, "parentId": 94, "isim": "Mihail Bakunin", "motto": "Yıkma tutkusu, yaratıcı bir tutkudur.", "aciklama": "Kolektivist anarşizmin en önemli kuramcılarındandır.", "resimDosyaAdi": "bakunin_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Mihail_Bakunin" },
+
+    { "id": 96, "parentId": 61, "isim": "Realizm (Siyasal)", "motto": "", "aciklama": "Siyasette ahlaki ideallerin değil, güç ve çıkar ilişkilerinin geçerli olduğunu savunan akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 97, "parentId": 96, "isim": "Niccolò Machiavelli", "motto": "Amaca giden her yol mübahtır.", "aciklama": "Modern siyaset biliminin kurucularındandır. 'Prens' kitabıyla ünlüdür.", "resimDosyaAdi": "machiavelli_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Niccolò_Machiavelli" },
+
+    { "id": 98, "parentId": 28, "isim": "Kinizm", "motto": "", "aciklama": "Toplumsal kuralları reddedip doğaya uygun, basit bir yaşamı savunan akım.", "resimDosyaAdi": "", "wikiLinki": "" },
+    { "id": 99, "parentId": 98, "isim": "Diyojen", "motto": "Gölge etme, başka ihsan istemem.", "aciklama": "Kinizmin en uç temsilcisidir, bir fıçıda yaşamış ve otoriteyle alay etmiştir.", "resimDosyaAdi": "diyojen_portre", "wikiLinki": "https://tr.wikipedia.org/wiki/Diyojen" },
+
+    { "id": 100, "parentId": 11, "isim": "Pozitivizm", "motto": "", "aciklama": "Sadece bilimsel verilerle (deney ve gözlemle) elde edilen bilginin geçerli olduğunu savunan akım.", "resimDosyaAdi": "", "wikiLinki": "" }
   ]
 }
