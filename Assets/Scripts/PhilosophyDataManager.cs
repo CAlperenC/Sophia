@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class FelsefeDugumu
@@ -26,7 +27,8 @@ public class PhilosophyDataManager : MonoBehaviour
 {
     public static PhilosophyDataManager philosophyDataManager;
     public List<FelsefeDugumu> tumVeriler = new List<FelsefeDugumu>();//jsondaki verilerli tutacak 
-    
+    public List<ButtonControl> ekrandakiAktifDugumlerListesi = new List<ButtonControl>();//bir butona tıklanınca kardeş butondaki dalları kapatacak
+
     [Header("UI Ayarları")]
     public GameObject butonPrefab;
     public RectTransform icerikPaneli;
@@ -72,12 +74,13 @@ public class PhilosophyDataManager : MonoBehaviour
         rect.anchoredPosition = pozisyon;
         
         yeniButon.GetComponent<ButtonControl>().KurulumYap(veri);
-        
+        ekrandakiAktifDugumlerListesi.Add(yeniButon.GetComponent<ButtonControl>());
         return yeniButon;
     }
 
     public List<GameObject> AltDallariAc(FelsefeDugumu parentVeri, Vector2 parentPozisyon)
     {
+        BaskaDallariKapat(parentVeri.parentId,parentVeri.id);// aynı seviyedeki diğer dalları kapadık
         //bu ebeveyne ait çocukları listeden bul
         List<GameObject> olusturulanButonlar = new List<GameObject>();
         List<FelsefeDugumu> cocuklar = tumVeriler.FindAll(x => x.parentId == parentVeri.id);
@@ -121,5 +124,16 @@ public class PhilosophyDataManager : MonoBehaviour
             yenibuton.GetComponent<ButtonControl>().cizgi = yeniCizgi;//çizgiyi işaret ettiği butonun scriptine referansını ekliyoruz ki butonu silerken çizgiyi de silebilelim
         }
         return olusturulanButonlar;
+    }
+
+    public void BaskaDallariKapat(int tiklananDugumParentId, int tiklananDugumId)
+    {
+        foreach (var dugum in ekrandakiAktifDugumlerListesi)
+        {
+            if (dugum.benimVerim.parentId == tiklananDugumParentId && dugum.benimVerim.id != tiklananDugumId)
+            {
+                dugum.AltButonlarıKapat(); 
+            }
+        }
     }
 }
