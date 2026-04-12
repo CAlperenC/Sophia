@@ -10,7 +10,7 @@ public class DragUI : MonoBehaviour, IDragHandler, IBeginDragHandler
     public void OnDrag(PointerEventData eventData)
     {
         //this.GetComponent<RectTransform>().anchoredPosition = eventData.delta;
-        GetComponent<RectTransform>().anchoredPosition += eventData.delta / GetComponent<RectTransform>().GetComponentInParent<Canvas>().scaleFactor;
+        //GetComponent<RectTransform>().anchoredPosition += eventData.delta / GetComponent<RectTransform>().GetComponentInParent<Canvas>().scaleFactor;
 
     }
 
