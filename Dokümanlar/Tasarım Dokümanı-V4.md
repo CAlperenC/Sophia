@@ -30,8 +30,10 @@ Assets klasörü içerisinde arayüzde kullanılan asset'ler bulunacaktır.
 │   └── Tree_Scene
 ├── Scripts/
 │   ├── TestManager.cs
+│   ├── BilgiPanel.cs
+│   ├── ButtonControl.cs
 │   ├── PhilosophyDataManager.cs
-│   └── BilgiPanel.cs
+│   └── ZoomTree.cs
 └── Assets
 ```
 ### Ana İmplementasyonlar
@@ -44,13 +46,14 @@ Assets klasörü içerisinde arayüzde kullanılan asset'ler bulunacaktır.
 `public void makeQuestion():` Veritabanından bilgiler alarak bunlara göre sorular oluşturur.
 `public boolean evaluateAnswer():` Bir soruya verilen cevabın doğru olup olmadığını değerlendirir.
 `public void goToMain():` Test arayüzünden ana arayüze geçişi sağlar.   
+#### ButtonControl:
+`public void SeviyeyiDüzleştir():` Sıradaki filtre seviyesini atlar.
+`public void AltButonlarıKapat():` Kendine bağllı alt butonların kapatılmasını sağlar.
 #### PhilosophyDataManager:
 `public void AltDallariAc():` Alt node'ları olan bir node’a tıklandığında alt node'ların görünmesini sağlar.
 `public void displayInfoCards():` Bilgi kartına sahip olan bir node’a tıklandığında bu node’un bilgi kartının gösterilmesini sağlar. Bilgi kartı arayüzüne geçer.
-`public void skipFilter():` Sıradaki aşamanın atlanmasını sağlar.
 `public GameObject DugumOlustur(FelsefeDugumu veri, Vector2 pozisyon):` Ağaca eklenecek yeni düğümü oluşturur.
 `void VerileriYukle():` JSON dosyasındaki verileri okur.
-`public void filter(String filter):` Filtreleme kriterine göre ağacı filtreler.
 #### BilgiPanel:
 `public void PaneliAc(FelsefeDugumu filozofVerisi):` Konuyla ilgili bilgilerin verileceği paneli oluşturup bilgileri yazar.
 `public void LinkeGit():` Konuyla ilgili detaylı bilginin verildiği internet adresine yönlendirir.
@@ -62,14 +65,14 @@ Buradaki görseller uygulamanın planlanan arayüzüne örneklerdir.
 ![Node Tree](https://github.com/CAlperenC/Sophia/blob/main/D%C3%B6k%C3%BCmanlar/D%C3%B6k%C3%BCman%20G%C3%B6rselleri/A%C4%9Fa%C3%A7Aray%C3%BCz%C3%BC.jpeg)
 ## Tasarımda Senaryo Desteği
 ### Senaryo Seçimi
-- Akıma göre filozof filtreleme.
+- Sıradaki filtre katmanını atlama.
 - Filozofa tıklandığı zaman detaylı görünümünü vermesi.
 - Node ağacında gezinme. 
 - Felsefe quiz'i.
 
 ### Gereksinim Planlaması
-**Akıma Göre Filozof Filtreleme:**
-- Kullanıcı, filozofları ve felsefe konularını sıralayabilmeli veya filtreleyebilmeli.
+**Sıradaki Filtre Katmanını Atlama:**
+- Kullanıcı, sıradaki katmana göre sonuçları kısıtlamak istemiyorsa atlayıp doğrudan sonrakine geçebilmeli. Örneğin filozofları dönemlere göre filtrelemek istemiyorsa dönem kısmını atlayıp hepsini getirebilmeli.
 
 **Filozofa Tıklandığı Zaman Detaylı Görünümünü Vermesi:**
 - Kullanıcı filozoflara veya felsefe konularına tıklayarak onlar hakkında bilgi edinebilmeli.
@@ -90,7 +93,7 @@ Aşağıda tüm senaryoların tasarımı ile ilgili bilgiler verilmiştir.
 
 **Filozofa Tıklandığı Zaman Detaylı Görünümünü Vermesi:** Bu senaryonun gerçekleştirilmesi için `Agac` arayüzünde bir filozofa tıklandığında `PaneliAc()` fonksiyonu çağrılarak ilgili bilgi okunur ve arayüzde bilgi paneline yazılır.
 
-**Akıma Göre Filozof Filtreleme:** `Agac` arayüzünde iken filtreleme kriterleri seçildikten sonra `Filtrele` butonuna basınca mantık katmanından `filter()` fonksiyonunu çağırarak `Agac` arayüzünde gerekli değişiklikler yapılacaktır.
+**Sıradaki Filtre Katmanını Atlama:** `Agac` arayüzünde iken alt dalları açılmış bir butonun altındaki `Düzleştir` butonuna basınca mantık katmanından `SeviyeyiDüzleştir()` fonksiyonunu çağırarak `Agac` arayüzünde gerekli değişiklikler yapılacaktır.
 
 **Filozof Quiz'i:** Arayüz katmanında `Test` arayüzü ile gerçekleştirilir. Ana arayüzdeyken `Quiz` butonuna basıldığında `Test` arayüzüne geçilir. Mantık katmanından `makeQuestion()` fonksiyonu çağrılarak veri katmanındaki verilerden rastgele testler oluşturulur ve `Test` arayüzüne yazılır. Test bittikten sonra testin sonucu mantık katmanından `writeJSON()` fonksiyonu ile veri katmanından ilgili JSON dosyasına yazılır.
 ## Tasarım Kararları
