@@ -9,11 +9,15 @@ public class NodeFactory : MonoBehaviour
     [Header("UI Ayarları")]
     public GameObject butonPrefab;
     public RectTransform icerikPaneli;
-    void Start()
+    void Awake()
     {
-        if(nodeFactory== null)
+        if(nodeFactory == null)
         {
             nodeFactory = this;
+        }
+        else if (nodeFactory != this)
+        {
+            Destroy(gameObject);
         }
     }
     public GameObject DugumOlustur(FelsefeDugumu veri, Vector2 pozisyon)
