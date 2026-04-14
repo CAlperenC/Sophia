@@ -473,6 +473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1007695162}
   - component: {fileID: 1007695161}
+  - component: {fileID: 1007695163}
   m_Layer: 0
   m_Name: DataManager
   m_TagString: Untagged
@@ -492,9 +493,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cce9f91fbaa8ee34b9a5e9e9a0dcb682, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PhilosophyDataManager
+  parser: {fileID: 1007695163}
   tumVeriler: []
   ekrandakiAktifDugumlerListesi: []
-  butonPrefab: {fileID: 4508046300754939765, guid: 347da727e2007e641b692a1b2434a9b5, type: 3}
   icerikPaneli: {fileID: 1484379392}
   yatayBosluk: 300
   dikeyBosluk: 200
@@ -515,6 +516,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1007695163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007695160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4e9371fef485f940b6db50dc499e865, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AnaKodlar::JsonParser
+  jsonDosyasi: {fileID: 4900000, guid: 2e46ee46aadd34141a5b5a84c249c1ef, type: 3}
 --- !u!1 &1080950511
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,6 +803,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1118950373}
   m_CullTransparentMesh: 1
+--- !u!1 &1273542265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1273542267}
+  - component: {fileID: 1273542266}
+  m_Layer: 0
+  m_Name: NodeFactory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1273542266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273542265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15c11be3238ca54cbd11ea99416b866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AnaKodlar::NodeFactory
+  butonPrefab: {fileID: 4508046300754939765, guid: 347da727e2007e641b692a1b2434a9b5, type: 3}
+  icerikPaneli: {fileID: 1484379392}
+--- !u!4 &1273542267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273542265}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.60328, y: 0.04974, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1304593592
 GameObject:
   m_ObjectHideFlags: 0
@@ -1885,3 +1945,4 @@ SceneRoots:
   - {fileID: 1933561986}
   - {fileID: 1007695162}
   - {fileID: 164300482}
+  - {fileID: 1273542267}

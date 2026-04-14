@@ -1,6 +1,5 @@
 using UnityEngine;
 using TMPro;
-//using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine.UI;
 
 public class BilgiPanel : MonoBehaviour

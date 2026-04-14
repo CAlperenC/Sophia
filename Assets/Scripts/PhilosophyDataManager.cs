@@ -1,36 +1,18 @@
 using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine.UI;
+//using Codice.Client.Common.TreeGrouper;
 
-[System.Serializable]
-public class FelsefeDugumu
-{
-    public int id;
-    
-    public int parentId;
-    public string seviye;
-    public string isim;
-    public string motto;
-    public string aciklama;
-    public string resimDosyaAdi; 
-    public string wikiLinki;
-}
-
-[System.Serializable]
-public class FelsefeVeritabani
-{
-    //isim  JSON dosyasındaki liste adıyla aynı olmalıdır.
-    public List<FelsefeDugumu> dugumler;
-}
 
 public class PhilosophyDataManager : MonoBehaviour
 {
+    public JsonParser parser;
     public static PhilosophyDataManager philosophyDataManager;
     public List<FelsefeDugumu> tumVeriler = new List<FelsefeDugumu>();//jsondaki verilerli tutacak 
     public List<ButtonControl> ekrandakiAktifDugumlerListesi = new List<ButtonControl>();//bir butona tıklanınca kardeş butondaki dalları kapatacak
 
     [Header("UI Ayarları")]
-    public GameObject butonPrefab;
+    
+    //public GameObject butonPrefab;
     public RectTransform icerikPaneli;
     
     [Header("Ağaç Boşluk Ayarları")]
@@ -47,35 +29,13 @@ public class PhilosophyDataManager : MonoBehaviour
         {
             philosophyDataManager = this;
         }
-        VerileriYukle();//jsonu oku verileri listeye at
+        tumVeriler = parser.VerileriYukle();//jsonu oku verileri listeye at
         //root dugumu bulup oluşturuyoruz
         FelsefeDugumu rootDugum = tumVeriler.Find(x => x.parentId == 0);
         if (rootDugum != null)
         {
-            DugumOlustur(rootDugum, new Vector2(0, 3600/2-100));//3600 icerik paneli uzunluğudur.
+            NodeFactory.nodeFactory.DugumOlustur(rootDugum, new Vector2(0, 3600/2-100));//3600 icerik paneli uzunluğudur.
         }
-    }
-
-    void VerileriYukle()
-    {
-        TextAsset jsonDosyasi = Resources.Load<TextAsset>("FilozofVerileri");
-        if (jsonDosyasi != null)
-        {
-            FelsefeVeritabani veritabani = JsonUtility.FromJson<FelsefeVeritabani>(jsonDosyasi.text);
-            tumVeriler = veritabani.dugumler;
-        }
-    }
-
-    public GameObject DugumOlustur(FelsefeDugumu veri, Vector2 pozisyon)
-    {
-        GameObject yeniButon = Instantiate(butonPrefab, icerikPaneli);
-        RectTransform rect = yeniButon.GetComponent<RectTransform>();
-        
-        rect.anchoredPosition = pozisyon;
-        
-        yeniButon.GetComponent<ButtonControl>().KurulumYap(veri);
-        ekrandakiAktifDugumlerListesi.Add(yeniButon.GetComponent<ButtonControl>());
-        return yeniButon;
     }
 
     public List<GameObject> AltDallariAc(FelsefeDugumu parentVeri, Vector2 parentPozisyon)
@@ -119,7 +79,7 @@ public class PhilosophyDataManager : MonoBehaviour
             cizgiRect.localRotation = Quaternion.Euler(0, 0, aci);
             //
 
-            GameObject yenibuton = DugumOlustur(cocuklar[i], cocukPozisyon);
+            GameObject yenibuton = NodeFactory.nodeFactory.DugumOlustur(cocuklar[i], cocukPozisyon);
             olusturulanButonlar.Add(yenibuton);
             yenibuton.GetComponent<ButtonControl>().cizgi = yeniCizgi;//çizgiyi işaret ettiği butonun scriptine referansını ekliyoruz ki butonu silerken çizgiyi de silebilelim
         }
@@ -188,7 +148,7 @@ public class PhilosophyDataManager : MonoBehaviour
             cizgiRect.localRotation = Quaternion.Euler(0, 0, aci);
             //
 
-            GameObject yenibuton = DugumOlustur(cocuklar[i], cocukPozisyon);
+            GameObject yenibuton = NodeFactory.nodeFactory.DugumOlustur(cocuklar[i], cocukPozisyon);//DugumOlustur(cocuklar[i], cocukPozisyon);
             olusturulanButonlar.Add(yenibuton);
             yenibuton.GetComponent<ButtonControl>().cizgi = yeniCizgi;//çizgiyi işaret ettiği butonun scriptine referansını ekliyoruz ki butonu silerken çizgiyi de silebilelim
         }

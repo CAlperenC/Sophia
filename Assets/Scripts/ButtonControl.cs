@@ -2,9 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
-//using Unity.VisualScripting;
-//using System.Linq;
-//using PlasticPipe.PlasticProtocol.Messages;
 
 public class ButtonControl : MonoBehaviour
 {
