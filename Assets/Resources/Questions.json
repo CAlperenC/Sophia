@@ -1,0 +1,504 @@
+{
+  "questions": [
+    {
+      "questionText": "Varlığı, bilgiyi, gerçeği, doğruluğu, aklı ve değerleri anlamak için yapılan kapsamlı disiplin aşağıdakilerden hangisidir?",
+      "options": ["Psikoloji", "Felsefe", "Sosyoloji", "Tarih"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Varlığın doğasını, ilk prensipleri, uzay ve zamanı inceleyen temel dal hangisidir?",
+      "options": ["Epistemoloji", "Etik", "Metafizik (Ontoloji)", "Mantık"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "Bilginin doğasını, kaynağını, sınırlarını ve geçerliliğini inceleyen felsefe dalı nedir?",
+      "options": ["Estetik", "Epistemoloji", "Politik Felsefe", "Ontoloji"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "İnsan eylemlerinin değerini, iyi ve kötü kavramlarını, erdemi inceleyen dal aşağıdakilerden hangisidir?",
+      "options": ["Etik", "Estetik", "Mantık", "Kozmoloji"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "questionText": "Doğru düşünmenin ve geçerli argümanlar kurmanın kurallarını inceleyen disipline ne ad verilir?",
+      "options": ["Metafizik", "Estetik", "Epistemoloji", "Mantık"],
+      "correctAnswerIndex": 3
+    },
+    {
+      "questionText": "Güzelliğin doğasını ve sanatın ne olduğunu sorgulayan disiplin aşağıdakilerden hangisidir?",
+      "options": ["Etik", "Estetik", "Ontoloji", "Politik Felsefe"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Devlet, adalet, mülkiyet ve hukukun doğasını inceleyen dal hangisidir?",
+      "options": ["Politik Felsefe", "Etik", "Estetik", "Epistemoloji"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "questionText": "İnsan bilgisinin nereden geldiğini ve nasıl elde edildiğini sorgulayan epistemoloji alt dalı nedir?",
+      "options": ["Bilginin Sınırları", "Bilginin Kaynağı", "İlk Çağ", "Modern Çağ"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "İnsan zihninin neleri bilip neleri bilemeyeceğini tartışan epistemoloji alt dalı hangisidir?",
+      "options": ["Bilginin Kaynağı", "Bilginin Sınırları", "Çağdaş Dönem", "Rasyonalizm"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Doğru bilginin kaynağının yalnızca akıl olduğunu savunan akım aşağıdakilerden hangisidir?",
+      "options": ["Empirizm", "Kritisizm", "Rasyonalizm (Akılcılık)", "Pragmatizm"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "Kesin bilginin imkansız olduğunu, bilginin kişiden kişiye değiştiğini savunan akım hangisidir?",
+      "options": ["Sofizm (Görececilik)", "Rasyonalizm", "Empirizm", "Kritisizm"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "questionText": "Zihnin doğuştan boş bir levha olduğunu, tüm bilgilerin deneyimden geldiğini savunan akım nedir?",
+      "options": ["Rasyonalizm", "Empirizm (Deneyimcilik)", "Pragmatizm", "Sofizm"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Akıl ve deneyin sentezlenmesi gerektiğini savunan akım aşağıdakilerden hangisidir?",
+      "options": ["Empirizm", "Kritisizm (Eleştirelcilik)", "Rasyonalizm", "Pragmatizm"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Bir bilginin doğruluğunun, sağladığı pratik faydaya göre ölçüldüğü akım hangisidir?",
+      "options": ["Rasyonalizm", "Empirizm", "Kritisizm", "Pragmatizm"],
+      "correctAnswerIndex": 3
+    },
+    {
+      "questionText": "Soru sorma yöntemiyle doğuştan var olan bilgiyi açığa çıkardığına inanan ve 'Bildiğim tek şey, hiçbir şey bilmediğimdir' diyen filozof kimdir?",
+      "options": ["Platon", "Sokrates", "Protagoras", "Aristoteles"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Gerçek bilginin duyularla değil, ancak İdealar dünyasını kavramakla mümkün olduğunu savunan filozof kimdir?",
+      "options": ["Sokrates", "Protagoras", "Platon", "John Locke"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "Mutlak doğrunun olmadığını, algıların kişiye özel olduğunu savunup 'İnsan her şeyin ölçüsüdür' diyen düşünür kimdir?",
+      "options": ["Protagoras", "Sokrates", "Platon", "David Hume"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "questionText": "İnsan zihninin doğuştan boş bir levha (Tabula Rasa) olduğunu savunan, deneyimciliğin kurucularından filozof kimdir?",
+      "options": ["David Hume", "Immanuel Kant", "William James", "John Locke"],
+      "correctAnswerIndex": 3
+    },
+    {
+      "questionText": "Nedensellik ilkesinin bile bir alışkanlıktan ibaret olduğunu savunan ve 'Alışkanlık, insan hayatının en büyük kılavuzudur' diyen düşünür kimdir?",
+      "options": ["John Locke", "David Hume", "Immanuel Kant", "William James"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Bilginin deneyle başladığını ama sadece deneyden ibaret olmadığını savunan ve 'Algısız kavramlar boş, kavramsız algılar kördür' diyen filozof kimdir?",
+      "options": ["Immanuel Kant", "David Hume", "John Locke", "William James"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "questionText": "Pragmatizm akımının önemli temsilcilerinden olan ve 'Hakikat, düşüncelerimizin işe yarayan kısmıdır' diyen düşünür kimdir?",
+      "options": ["William James", "Immanuel Kant", "David Hume", "John Locke"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "questionText": "Ahlaki doğruluğu kurallara değil, kişinin karakterine ve erdemine bağlayan etik akımı nedir?",
+      "options": ["Stoacılık", "Epikürcülük", "Erdem Etiği", "Ödev Ahlakı"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "Dışsal olaylara karşı duygusal tepkisizlik ve akla uygun yaşamayı öğütleyen akım hangisidir?",
+      "options": ["Epikürcülük", "Stoacılık", "Ödev Ahlakı", "Faydacılık"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "En yüksek iyinin, acıdan uzaklaşarak elde edilen ruhsal dinginlik (haz) olduğunu savunan akım nedir?",
+      "options": ["Stoacılık", "Erdem Etiği", "Ödev Ahlakı", "Epikürcülük"],
+      "correctAnswerIndex": 3
+    },
+    {
+      "questionText": "Bir eylemin ahlaki değerinin sonucuna değil, arkasındaki niyete (ödeve) bağlı olduğunu savunan akım hangisidir?",
+      "options": ["Ödev Ahlakı (Deontoloji)", "Faydacılık", "Erdem Etiği", "Stoacılık"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "questionText": "En fazla sayıda insan için en yüksek mutluluğu sağlayan eylemin doğru olduğunu savunan etik akımı nedir?",
+      "options": ["Faydacılık (Utilitarianism)", "Ödev Ahlakı", "Stoacılık", "Epikürcülük"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "questionText": "Erdem etiğinin kurucusu olan ve 'Altın Orta' öğretisini savunan, 'Mutluluk, erdeme uygun etkinliktir' diyen filozof kimdir?",
+      "options": ["Epiktetos", "Marcus Aurelius", "Aristoteles", "Epikuros"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "Kölelikten filozofluğa uzanan yaşamıyla Stoacılığın önemli temsilcisi olan ve 'Bizi rahatsız eden olaylar değil, bizim onlara bakış açımızdır' diyen kişi kimdir?",
+      "options": ["Marcus Aurelius", "Epiktetos", "Aristoteles", "Epikuros"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "'Kendime Düşünceler' eserinin yazarı olan, Roma imparatoru ve Stoacı filozof kimdir?",
+      "options": ["Epiktetos", "Marcus Aurelius", "Epikuros", "Jeremy Bentham"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Hazcılık okulunun kurucusu olup 'Ölüm varken biz yokuz, biz varken ölüm yok' diyen düşünür kimdir?",
+      "options": ["Epikuros", "Jeremy Bentham", "John Stuart Mill", "Aristoteles"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "questionText": "Faydacılığın kurucusu olan ve hazları matematiksel bir hesaba dökülebilir olarak gören düşünür kimdir?",
+      "options": ["John Stuart Mill", "Jeremy Bentham", "Epikuros", "Marcus Aurelius"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Zihinsel hazların bedensel hazlardan üstün olduğunu savunan ve 'Halinden memnun bir aptal olmaktansa, mutsuz bir Sokrates olmak yeğdir' diyen filozof kimdir?",
+      "options": ["Jeremy Bentham", "John Stuart Mill", "Epikuros", "Aristoteles"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Evrenin kökeni, yapısı ve işleyişini bütünsel olarak ele alan ontoloji alt dalı nedir?",
+      "options": ["Varlık Bilimi", "Kozmoloji", "Oluş Felsefesi", "İdealizm"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Evrenin temelinde tek bir tözün veya prensibin bulunduğunu savunan akım hangisidir?",
+      "options": ["Monizm (Tekçilik)", "Oluş Felsefesi", "İdealizm", "Varoluşçuluk"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "questionText": "Durağan bir varlığın olmadığını, her şeyin sürekli bir değişim içinde olduğunu savunan akım nedir?",
+      "options": ["Monizm", "Oluş Felsefesi", "İdealizm", "Varoluşçuluk"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Gerçekliğin temelinde fikrin, aklın veya ruhun bulunduğunu savunan akım aşağıdakilerden hangisidir?",
+      "options": ["Oluş Felsefesi", "Monizm", "Varoluşçuluk", "İdealizm"],
+      "correctAnswerIndex": 3
+    },
+    {
+      "questionText": "İnsanın varoluşunun özünden önce geldiğini ve insanın kendini yarattığını savunan akım hangisidir?",
+      "options": ["Nihilizm", "İdealizm", "Varoluşçuluk", "Oluş Felsefesi"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "Evrensel bir gerçekliğin, anlamın veya değerin var olmadığını savunan akım nedir?",
+      "options": ["Varoluşçuluk", "Nihilizm (Hiççilik)", "İdealizm", "Monizm"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Felsefenin ilk düşünürü kabul edilen ve 'Her şeyin kökeni sudur' diyen filozof kimdir?",
+      "options": ["Anaksimenes", "Thales", "Herakleitos", "G.W.F. Hegel"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Thales'in öğrencisi olup evrenin temelini havaya dayandıran düşünür kimdir?",
+      "options": ["Thales", "Herakleitos", "Anaksimenes", "G.W.F. Hegel"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "Sürekli değişim ve zıtların birliği fikrini savunup 'Aynı nehirde iki kez yıkanılmaz' diyen filozof kimdir?",
+      "options": ["Anaksimenes", "Herakleitos", "G.W.F. Hegel", "Jean-Paul Sartre"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Diyalektik idealizmin kurucusu olan ve 'Geist' (Mutlak Ruh) kavramını merkeze alan düşünür kimdir?",
+      "options": ["G.W.F. Hegel", "Jean-Paul Sartre", "Albert Camus", "Friedrich Nietzsche"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "questionText": "Varoluşçuluğun en bilinen temsilcisi olan ve 'İnsan, özgür olmaya mahkumdur' diyen filozof kimdir?",
+      "options": ["Albert Camus", "Jean-Paul Sartre", "Friedrich Nietzsche", "G.W.F. Hegel"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Absürdizm ve Varoluşçuluk akımlarında önemli bir figür olan, 'Hayatın anlamı yoktur, bu yüzden onu yaşamak gerekir' diyen yazar/düşünür kimdir?",
+      "options": ["Jean-Paul Sartre", "Friedrich Nietzsche", "Albert Camus", "Thales"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "Geleneksel ahlakı yıkarak 'Üstinsan' kavramını öne süren ve 'Beni öldürmeyen şey, beni güçlendirir' diyen filozof kimdir?",
+      "options": ["Friedrich Nietzsche", "Albert Camus", "Jean-Paul Sartre", "Herakleitos"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "questionText": "İnsanların güvenlik veya haklar için doğal durumdan çıkarak devleti kurduklarını savunan politik akım hangisidir?",
+      "options": ["Ütopya Düşüncesi", "Marksizm", "Toplum Sözleşmesi", "Anarşizm"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "Gerçekte var olmayan ama olması arzulanan kusursuz toplum tasarımlarına ne ad verilir?",
+      "options": ["Toplum Sözleşmesi", "Ütopya Düşüncesi", "Marksizm", "Realizm"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Tarihi sınıf mücadeleleri üzerinden okuyan ve komünist bir toplum tasarlayan akım nedir?",
+      "options": ["Ütopya Düşüncesi", "Marksizm", "Toplum Sözleşmesi", "Anarşizm"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "İnsan doğasının bencil olduğunu ve mutlak bir otoriteye (Leviathan) ihtiyaç duyulduğunu savunan düşünür kimdir?",
+      "options": ["Jean-Jacques Rousseau", "Thomas More", "Thomas Hobbes", "Karl Marx"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "Eşitsizliğin kaynağını mülkiyette gören ve 'İnsan özgür doğar, oysa her yerde zincirlere vurulmuştur' diyen düşünür kimdir?",
+      "options": ["Thomas Hobbes", "Jean-Jacques Rousseau", "Thomas More", "Karl Marx"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Ütopya kavramının yaratıcısı olan ve eserinde eşitlikçi bir ada ülkesi tasarlayan kişi kimdir?",
+      "options": ["Thomas More", "Karl Marx", "Friedrich Engels", "Thomas Hobbes"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "questionText": "Bilimsel sosyalizmin kurucusu olup 'Filozoflar dünyayı yalnızca yorumladılar; asıl olan onu değiştirmektir' diyen düşünür kimdir?",
+      "options": ["Friedrich Engels", "Karl Marx", "Thomas More", "Jean-Jacques Rousseau"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Komünist Manifesto'nun ortak yazarı olan ve 'Devlet ortadan kaldırılmaz, o sönümlenir' diyen kişi kimdir?",
+      "options": ["Karl Marx", "Friedrich Engels", "Mihail Bakunin", "Thomas Hobbes"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Sanatın özünde gerçeğin veya doğanın taklidi olduğunu savunan estetik akımı nedir?",
+      "options": ["Öznelci Estetik", "Mimesis (Taklit)", "Sezgicilik", "Plüralizm"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Güzelliğin nesnede değil, izleyicinin zihninde ve yargısında olduğunu savunan akım hangisidir?",
+      "options": ["Mimesis", "Öznelci Estetik", "Sezgicilik", "Pozitivizm"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Yeni Platonculuğun kurucusu olup sanatı tanrısal olanın dışavurumu olarak gören filozof kimdir?",
+      "options": ["Alexander Baumgarten", "Plotinos", "Farabi", "Ludwig Wittgenstein"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Estetik kelimesini felsefi bir disiplin adı olarak kullanan ilk filozof kimdir?",
+      "options": ["Plotinos", "Alexander Baumgarten", "Bertrand Russell", "Farabi"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Aristoteles'in kurduğu, kavramlar ve önermeler üzerinden çıkarım yapan sisteme ne ad verilir?",
+      "options": ["Analitik Felsefe", "Sembolik Mantık", "Klasik Mantık", "Biçimsel Mantık"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "Felsefenin asıl görevinin dili mantıksal olarak analiz etmek olduğunu savunan akım hangisidir?",
+      "options": ["Klasik Mantık", "Analitik Felsefe", "Pozitivizm", "Sezgicilik"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "İslam felsefesinde 'İkinci Öğretmen' olarak bilinen ve Aristoteles mantığını geliştiren düşünür kimdir?",
+      "options": ["Gazali", "Farabi", "Ludwig Wittgenstein", "Bertrand Russell"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Analitik felsefenin önemli figürü olan ve 'Dilimin sınırları, dünyamın sınırlarıdır' diyen filozof kimdir?",
+      "options": ["Bertrand Russell", "Ludwig Wittgenstein", "Farabi", "Gazali"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Mantıkçı pozitivizmin öncülerinden olup Principia Mathematica eserini yazan düşünür kimdir?",
+      "options": ["Ludwig Wittgenstein", "Bertrand Russell", "Farabi", "Gazali"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Evrenin birden fazla ana maddeden oluştuğunu savunan antik dönem akımı nedir?",
+      "options": ["Monizm", "Plüralizm (Çoğulculuk)", "Sezgicilik", "Anarşizm"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Atomculuk fikrinin kurucusu olup 'Evrende sadece atomlar ve boşluk vardır' diyen düşünür kimdir?",
+      "options": ["Empedokles", "Demokritos", "Henri Bergson", "Mihail Bakunin"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Dört element kuramını ilk ortaya atan ve 'Her şey toprak, su, hava ve ateşten oluşur' diyen filozof kimdir?",
+      "options": ["Demokritos", "Empedokles", "Henri Bergson", "Gazali"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Gerçekliğin akılla değil, doğrudan bir kavrayış olan sezgiyle anlaşılabileceğini savunan akım hangisidir?",
+      "options": ["Plüralizm", "Sezgicilik", "Anarşizm", "Realizm"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Hayat atılımı (Élan vital) ve sezgi felsefesinin kurucusu olan düşünür kimdir?",
+      "options": ["Gazali", "Henri Bergson", "Mihail Bakunin", "Niccolò Machiavelli"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Kesin bilginin ancak sezgiyle (kalp gözü) bulunabileceğini savunup 'Akıl sadece bir alettir, asıl rehber kalptir' diyen düşünür kimdir?",
+      "options": ["Henri Bergson", "Gazali", "Diyojen", "Mihail Bakunin"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Devlet ve otoritenin her türlüsünü reddeden, bireysel özgürlüğü savunan politik akım nedir?",
+      "options": ["Realizm", "Anarşizm", "Kinizm", "Pozitivizm"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Kolektivist anarşizmin önemli kuramcılarından olan ve 'Yıkma tutkusu, yaratıcı bir tutkudur' diyen düşünür kimdir?",
+      "options": ["Niccolò Machiavelli", "Mihail Bakunin", "Diyojen", "Henri Bergson"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Siyasette ahlaki ideallerin değil, güç ve çıkar ilişkilerinin geçerli olduğunu savunan akım hangisidir?",
+      "options": ["Anarşizm", "Kinizm", "Realizm (Siyasal)", "Pozitivizm"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "Modern siyaset biliminin kurucularından olan ve 'Prens' kitabıyla ünlü düşünür kimdir?",
+      "options": ["Diyojen", "Niccolò Machiavelli", "Mihail Bakunin", "Thomas More"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Toplumsal kuralları reddedip doğaya uygun, basit bir yaşamı savunan akım nedir?",
+      "options": ["Realizm", "Pozitivizm", "Kinizm", "Anarşizm"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "Kinizmin en uç temsilcisi olan, bir fıçıda yaşayıp 'Gölge etme, başka ihsan istemem' diyen düşünür kimdir?",
+      "options": ["Niccolò Machiavelli", "Diyojen", "Mihail Bakunin", "Empedokles"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Sadece bilimsel verilerle (deney ve gözlemle) elde edilen bilginin geçerli olduğunu savunan akım hangisidir?",
+      "options": ["Kinizm", "Pozitivizm", "Sezgicilik", "Plüralizm"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Epistemolojide, bilginin kaynağının akıl mı yoksa duyular mı olduğunun tartışılmaya başlandığı dönem hangisidir?",
+      "options": ["Modern Çağ", "İlk Çağ", "Çağdaş Dönem", "Aydınlanma Dönemi"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Epistemolojide, bilimsel devrim sonrası bilginin metodolojisinin kesin çizgilerle ayrıldığı dönem nedir?",
+      "options": ["İlk Çağ", "Çağdaş Dönem", "Modern Çağ", "Rönesans Sonrası"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "19. yüzyıl sonrası mutlak bilginin reddedildiği ve faydanın merkeze alındığı epistemolojik dönem hangisidir?",
+      "options": ["İlk Çağ", "Modern Çağ", "Çağdaş Dönem", "Aydınlanma Sonrası"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "Etik felsefesinde, neyin ahlaken doğru veya yanlış olduğunu belirleyen kuralları arayan alt dal nedir?",
+      "options": ["Uygulamalı Etik", "Normatif Etik", "Estetik", "Politik Felsefe"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Tıp, çevre, iş dünyası gibi spesifik alanlardaki ahlaki sorunları inceleyen etik alt dalı hangisidir?",
+      "options": ["Normatif Etik", "Uygulamalı Etik", "Biçimsel Mantık", "Sanat Felsefesi"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Erdemli bir yaşamın nasıl olması gerektiğinin sorgulandığı etik dönemi hangisidir?",
+      "options": ["Helenistik Dönem", "Modern Dönem", "Antik Dönem", "Aydınlanma Dönemi"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "Bireyin iç huzurunu ve mutluluğunu merkeze alan etik arayışların yaşandığı dönem nedir?",
+      "options": ["Antik Dönem", "Modern Dönem", "Helenistik Dönem", "Rönesans Sonrası"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "Evrensel ahlak yasalarının akıl yoluyla temellendirilmeye çalışıldığı etik dönemi hangisidir?",
+      "options": ["Antik Dönem", "Helenistik Dönem", "Modern Dönem", "Çağdaş Dönem"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "Ontolojide, evrenin ana maddesinin (arkhe) ne olduğunun sorgulandığı antik döneme ne ad verilir?",
+      "options": ["Aydınlanma Sonrası", "Doğa Felsefesi Dönemi", "20. Yüzyıl", "Rönesans Sonrası"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Varlığın akıl ve tinsel boyutlarının daha çok tartışıldığı ontolojik dönem hangisidir?",
+      "options": ["Doğa Felsefesi Dönemi", "20. Yüzyıl", "Aydınlanma Sonrası", "Helenistik Dönem"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "İnsan varoluşunun ve saçma (absürd) kavramının merkezde olduğu ontolojik dönem nedir?",
+      "options": ["Doğa Felsefesi Dönemi", "Aydınlanma Sonrası", "20. Yüzyıl", "Klasik Çağ"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "Politik felsefede, devletin nasıl ve neden ortaya çıktığını sorgulayan alt dal hangisidir?",
+      "options": ["İdeal Devlet", "Devletin Kökeni", "Toplum Sözleşmesi", "Ütopya Düşüncesi"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Mükemmel bir toplum ve devlet düzeninin nasıl olması gerektiğini araştıran politik felsefe alt dalı nedir?",
+      "options": ["Devletin Kökeni", "İdeal Devlet", "Marksizm", "Anarşizm"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Devletin ilahi bir kurum değil, insan yapısı bir organizasyon olduğunun tartışıldığı siyasi dönem hangisidir?",
+      "options": ["Antik Dönem Devlet", "19. Yüzyıl Siyaseti", "Rönesans Sonrası", "Aydınlanma Dönemi"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "Erdemli bir yaşam için gerekli olan polis (şehir devleti) düzeninin kurgulandığı siyasi dönem nedir?",
+      "options": ["Rönesans Sonrası", "19. Yüzyıl Siyaseti", "Antik Dönem Devlet", "Helenistik Dönem"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "Sanayi devrimi sonrası sınıf çatışmalarının siyasete yansıdığı dönem hangisidir?",
+      "options": ["Rönesans Sonrası", "Antik Dönem Devlet", "19. Yüzyıl Siyaseti", "Klasik Çağ"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionText": "Sanat eserinin doğasını ve yaratım sürecini inceleyen estetik alt dalı nedir?",
+      "options": ["Güzellik Felsefesi", "Sanat Felsefesi", "Mimesis", "Öznelci Estetik"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Doğadaki ve sanattaki güzellik kavramını sorgulayan estetik alt dalı hangisidir?",
+      "options": ["Sanat Felsefesi", "Güzellik Felsefesi", "Öznelci Estetik", "Mimesis"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Sanatın doğanın veya ideaların bir yansıması olarak görüldüğü estetik dönemi hangisidir?",
+      "options": ["Aydınlanma Dönemi", "Antik Sanat Anlayışı", "Rönesans Sonrası", "Modern Dönem"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Beğeni yargılarının ve güzelliğin öznelliğinin tartışıldığı estetik dönemi nedir?",
+      "options": ["Antik Sanat Anlayışı", "Aydınlanma Dönemi", "Klasik Çağ", "Doğa Felsefesi Dönemi"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Akıl yürütmenin kurallarını ve argümanların geçerliliğini inceleyen mantık alt dalı hangisidir?",
+      "options": ["Sembolik Mantık", "Biçimsel Mantık", "Klasik Mantık", "Analitik Felsefe"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Mantıksal önermeleri matematiksel sembollerle ifade eden modern mantık alt dalı nedir?",
+      "options": ["Biçimsel Mantık", "Sembolik Mantık", "Klasik Mantık", "Analitik Felsefe"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Kıyas yönteminin geliştirildiği ve mantığın temellerinin atıldığı dönem hangisidir?",
+      "options": ["20. Yüzyıl Dönemi", "Klasik Çağ", "Rönesans Sonrası", "Aydınlanma Sonrası"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Felsefi sorunların dilsel ve mantıksal analizle çözülebileceğinin savunulduğu mantık dönemi nedir?",
+      "options": ["Klasik Çağ", "20. Yüzyıl Dönemi", "Modern Çağ", "Helenistik Dönem"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "questionText": "Felsefede 'İnsan her şeyin ölçüsüdür' diyerek görececiliği savunan düşünür kimdir?",
+      "options": ["Platon", "Protagoras", "Sokrates", "Aristoteles"],
+      "correctAnswerIndex": 1
+    }
+  ]
+}
