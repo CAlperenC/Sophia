@@ -24,10 +24,10 @@ Projede görev alan herkes projenin yazılımına katkıda bulunacak olup, ana g
 **Emre Karaduman: UI Designer**
 - Kullanıcı deneyimine uygun, ergonomik ve modern bir tasarım üretmekten sorumlu.
 
-**Osman Kuru:  Lead Developer**
+**Mustafa Alperen Coşkun: Lead Developer**
 - Uygulamanın temel yazılımsal mimarisini oluşturmaktan sorumlu.
 
-**Mustafa Alperen Coşkun: Content Designer**
+**Osman Kuru: Developer/Tech Lead**
 - Uygulamanın içeriği, metinler ve quizleri düzenlemek ve kontrol etmekten sorumlu.
 
 ## Objektifler
