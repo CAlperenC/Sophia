@@ -11,7 +11,7 @@
 ## Sisteme Genel Bakış
 ### Projenin Özeti
 Sophia, felsefeye ilgi duyan giriş seviyesindeki insanların filozoflar ve felsefenin farklı dalları hakkındaki bilgisini genişletmesini ve felsefe spektrumunda kendi fikirlerinin nerede konumlandığını anlamasını sağlamayı, dolayısıyla kendini keşfetmesini amaçlayan bir uygulamadır. 
-Uygulama içerisinde kullanıcı; felsefe dalları ve filozoflar arasında kullanıcı dostu bir arayüz vasıtası ile dolanabilir, bunları sıralayabilir, filtreleyebilir ve içerikleri görüntüleyebilir, bununla beraber menüden tıklayarak açabileceği, bilgisini sınayan quizler ve kendi ideolojik konumunu anlamasını sağlayan testler ile etkileşime geçebilir.
+Uygulama içerisinde kullanıcı; felsefe dalları ve filozoflar arasında kullanıcı dostu bir arayüz vasıtası ile dolanabilir, bunları sıralayabilir, filtreleyebilir ve içerikleri görüntüleyebilir, bununla beraber menüden tıklayarak açabileceği, bilgisini sınayan quiz'ler ve kendi ideolojik konumunu anlamasını sağlayan testler ile etkileşime geçebilir.
 ### Sistem Mimarisi
 Projede katmanlı bir mimari uygulanması planlanmaktadır. Projenin yapısı; filozof ve felsefe verilerinin tutulacağı bir veri katmanı, bu verilerden yararlanılarak uygulamanın fonksiyonlarının gerçekleştirildiği bir mantık katmanı, kullanıcının filozof ve felsefe sayfaları, quiz'ler ve testler ile etkileşebilmesini sağlayan arayüz için bir sunum katmanı şeklinde birbirinden bağımsız Unity sahnelerinden oluşmaktadır.
 ### Kullanılan Teknolojiler
@@ -19,33 +19,43 @@ Uygulamanın geliştirilmesinde kullanılacak ana teknoloji Unity oyun motorudur
 ## İmplementasyon Detayları
 ### Codebase Yapısı
 Projede Unity'nin yapısına uygun bir klasör sistemi kullanılacaktır.
-Scenes klasörü içerisinde Unity sahneleri; Main_Menu, Test_Scene ve Tree_Scene bulunacaktır.
+Scenes klasörü içerisinde Unity sahneleri; MainMenuScene, TestScene ve SearchScene bulunacaktır.
 Scripts klasörü içerisinde C# script'leri bulunacaktır.
-Assets klasörü içerisinde arayüzde kullanılan asset'ler bulunacaktır.
+Resources klasörü içerisinde arayüzde kullanılan asset'ler ve JSON formatında saklanılan veriler bulunacaktır.
 ```
 .
 ├── Scenes/
-│   ├── Main_Menu
-│   ├── Test_Scene
-│   └── Tree_Scene
+│   ├── MainMenuScene
+│   ├── SearchScene
+│   └── TestScene
 ├── Scripts/
-│   ├── TestManager.cs
 │   ├── BilgiPanel.cs
 │   ├── ButtonControl.cs
+│   ├── DragUI.cs
+│   ├── JsonParser.cs
+│   ├── JsonVeriModelleri.cs
+│   ├── NodeFactory.cs
 │   ├── PhilosophyDataManager.cs
+│   ├── QuizManager.cs
+│   ├── SceneChanger.cs
 │   └── ZoomTree.cs
-└── Assets
+├── Resources/
+│   ├── BackIcon.png
+│   ├── FilozofVerileri.json
+│   ├── Questions.json
+│   ├── radio_button_checked.png
+│   └── radio_button_unchecked.png
 ```
 ### Ana İmplementasyonlar
-`TestManager:` Uygulamadaki test özelliğiyle ilgili metotları içerir. Test oluşturma, Soru oluşturma, Sorular arasında geçme gibi işlemleri yönetir.
+`QuizManager:` Uygulamadaki quiz özelliğiyle ilgili metotları içerir. Quiz oluşturma, soru verisinin yüklenilmesi, sorular arasında geçme gibi işlemleri yönetir.
 `PhilosophyDataManager:` Filozof ağacı ile ilgili metotlara sahiptir. Alt nodeları açma gibi işlemleri yönetir. JSON dosyalarına yazma ve okuma işlemlerinin metotlarını içerir.
 `BilgiPanel:` Filozofların bilgilerini görüntüleme ile ilgili metotlara sahiptir.
 
 ### Bileşen Arayüzleri
-#### TestManager:
-`public void makeQuestion():` Veritabanından bilgiler alarak bunlara göre sorular oluşturur.
-`public boolean evaluateAnswer():` Bir soruya verilen cevabın doğru olup olmadığını değerlendirir.
-`public void goToMain():` Test arayüzünden ana arayüze geçişi sağlar.   
+#### QuizManager:
+`void DisplayQuestion(int index):` Veritabanından alınan bilgiler ile o anki sorunun görüntülenmesini sağlar.
+`void CheckAnswer(int chosenIndex, int correctIndex):` Bir soruya verilen cevabın doğru olup olmadığını değerlendirir.
+`void NextQuestion():` Soru index'ini bir arttırarak sonraki soruya geçişi sağlar.   
 #### ButtonControl:
 `public void SeviyeyiDüzleştir():` Sıradaki filtre seviyesini atlar.
 `public void AltButonlarıKapat():` Kendine bağllı alt butonların kapatılmasını sağlar.
@@ -84,7 +94,7 @@ Buradaki görseller uygulamanın planlanan arayüzüne örneklerdir.
 **Felsefe Quiz'i:**
 - Kullanıcı felsefe konularına ait quiz’lerle kendini sınayabilmeli.
 - Kullanıcı bu quiz'lerde şıklara tıklayarak cevap verebilmeli.
-- Kullanıcı quiz bitince ekranda başarı sonucunu görebilmeli.
+- Kullanıcı sorulara verdiği cevapların doğruluğunu öğrenebilmeli.
 
 ### Senaryo Tasarımı
 Aşağıda tüm senaryoların tasarımı ile ilgili bilgiler verilmiştir.
@@ -95,7 +105,7 @@ Aşağıda tüm senaryoların tasarımı ile ilgili bilgiler verilmiştir.
 
 **Sıradaki Filtre Katmanını Atlama:** `Agac` arayüzünde iken alt dalları açılmış bir butonun altındaki `Düzleştir` butonuna basınca mantık katmanından `SeviyeyiDüzleştir()` fonksiyonunu çağırarak `Agac` arayüzünde gerekli değişiklikler yapılacaktır.
 
-**Filozof Quiz'i:** Arayüz katmanında `Test` arayüzü ile gerçekleştirilir. Ana arayüzdeyken `Quiz` butonuna basıldığında `Test` arayüzüne geçilir. Mantık katmanından `makeQuestion()` fonksiyonu çağrılarak veri katmanındaki verilerden rastgele testler oluşturulur ve `Test` arayüzüne yazılır. Test bittikten sonra testin sonucu mantık katmanından `writeJSON()` fonksiyonu ile veri katmanından ilgili JSON dosyasına yazılır.
+**Filozof Quiz'i:** Arayüz katmanında `Quiz` arayüzü ile gerçekleştirilir. Ana arayüzdeyken `Quiz` butonuna basıldığında `Quiz` arayüzüne geçilir. `DisplayQuestion(int index)` fonksiyonu çağrılarak veri katmanından rastgele bir soru `Quiz` arayüzüne yazılır. `CheckAnswer(int chosenIndex, int correctIndex)` fonksiyonu cevabın işaretlenmesi sonucunda çağrılarak yanıtının doğruluğunu kontrol eder, `NextQuestion()` ise kullanıcının sıradaki soruya geçebilmesini sağlar.
 ## Tasarım Kararları
 ### Teknoloji Kıyaslamaları
 Burada verileri saklamak kullandığımız JSON formatı ile diğer alternatifleri karşılaştırdık.
