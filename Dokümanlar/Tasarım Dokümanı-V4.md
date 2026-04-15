@@ -60,9 +60,9 @@ Assets klasörü içerisinde arayüzde kullanılan asset'ler bulunacaktır.
 ### Görsel Arayüzler
 Buradaki görseller uygulamanın planlanan arayüzüne örneklerdir.
 
-![Main Menu](https://github.com/CAlperenC/Sophia/blob/main/D%C3%B6k%C3%BCmanlar/D%C3%B6k%C3%BCman%20G%C3%B6rselleri/AnaMen%C3%BCAray%C3%BCz%C3%BC.jpeg)
-![Test Menu](https://github.com/CAlperenC/Sophia/blob/main/D%C3%B6k%C3%BCmanlar/D%C3%B6k%C3%BCman%20G%C3%B6rselleri/TestMen%C3%BCs%C3%BCAray%C3%BCz%C3%BC.jpeg)
-![Node Tree](https://github.com/CAlperenC/Sophia/blob/main/D%C3%B6k%C3%BCmanlar/D%C3%B6k%C3%BCman%20G%C3%B6rselleri/A%C4%9Fa%C3%A7Aray%C3%BCz%C3%BC.jpeg)
+![Main Menu](https://github.com/CAlperenC/Sophia/blob/main/Dok%C3%BCmanlar/Dok%C3%BCman%20G%C3%B6rselleri/AnaMen%C3%BCAray%C3%BCz%C3%BC.jpeg)
+![Test Menu](https://github.com/CAlperenC/Sophia/blob/main/Dok%C3%BCmanlar/Dok%C3%BCman%20G%C3%B6rselleri/TestMen%C3%BCs%C3%BCAray%C3%BCz%C3%BC.jpeg)
+![Node Tree](https://github.com/CAlperenC/Sophia/blob/main/Dok%C3%BCmanlar/Dok%C3%BCman%20G%C3%B6rselleri/A%C4%9Fa%C3%A7Aray%C3%BCz%C3%BC.jpeg)
 ## Tasarımda Senaryo Desteği
 ### Senaryo Seçimi
 - Sıradaki filtre katmanını atlama.
