@@ -26,6 +26,9 @@ public class ButtonControl : MonoBehaviour
 
     public void Tiklandiginda()
     {
+        Debug.Log("tiklandiğinda çağırıldı");
+        float startTime = Time.realtimeSinceStartup; 
+
         if(!isOpen){
             //alt dallar açılacak 
             altButonlar = PhilosophyDataManager.philosophyDataManager.AltDallariAc(benimVerim,rectTransform.anchoredPosition);
@@ -40,6 +43,10 @@ public class ButtonControl : MonoBehaviour
             AltButonlarıKapat();
             altbutonlarAcildi_Kapandi(false);
         }
+        float endTime = Time.realtimeSinceStartup;
+        float duration = (endTime - startTime) * 1000; // Saniyeyi milisaniyeye çevir
+        Debug.Log("tiklandiğinda bitti.");
+        Debug.Log("Geçen süre: " + duration + " ms");
     }
 
     public void altbutonlarAcildi_Kapandi(bool acildi)
@@ -79,6 +86,9 @@ public class ButtonControl : MonoBehaviour
 
     public void SeviyeyiDüzleştir()// alt dallarını kapatıp kapattığı alt dallara ait bütün alt dalları açacak
     {
+        
+        Debug.Log("tiklandiğinda çağırıldı");
+        float startTime = Time.realtimeSinceStartup; 
         if(isOpen){
             List<int> idler = new List<int>();
             foreach (var item in altButonlar)
@@ -88,5 +98,9 @@ public class ButtonControl : MonoBehaviour
             AltButonlarıKapat();
             altButonlar = PhilosophyDataManager.philosophyDataManager.AltDallariAc(benimVerim,idler,rectTransform.anchoredPosition);
         }
+        float endTime = Time.realtimeSinceStartup;
+        float duration = (endTime - startTime) * 1000; // Saniyeyi milisaniyeye çevir
+        Debug.Log("tiklandiğinda bitti.");
+        Debug.Log("Geçen süre: " + duration + " ms");
     }
 }
