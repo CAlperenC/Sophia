@@ -30,9 +30,9 @@ Yapılan test başarılı olmuş denilebilir, uygulamanın testin gerçekleştir
 ### Test 4: 
 Yapılan test başarılı olmuş ve quiz modülünün uçtan uca eksiksiz çalıştığı doğrulanmıştır. JSON dosyasından veri okuma (deserialization) ve bu verilerin UI bileşenlerine aktarılması işlemi gecikme yaşanmadan, eşzamanlı olarak gerçekleşmiştir. Soru cevaplama mekanizması sırasındaki durum (state) yönetimi doğru çalışmış, sıradaki soruya geçilirken önceki sorunun verileri temizlenip yeni veriler arayüze hatasız bir şekilde yüklenmiştir. Sahne geçişleri (Scene Management) sırasında memory leak veya veri kaybı gözlemlenmemiştir. 
 ## Log ve Output'lar
-![TestLog1]([https://github.com/CAlperenC/Sophia/blob/main/Dok%C3%BCmanlar/Dok%C3%BCman%20G%C3%B6rselleri/AnaMen%C3%BCAray%C3%BCz%C3%BC.jpeg](https://github.com/CAlperenC/Sophia/blob/main/Dok%C3%BCmanlar/Dok%C3%BCman%20G%C3%B6rselleri/testlog1.png)
-![TestLog2]([https://github.com/CAlperenC/Sophia/blob/main/Dok%C3%BCmanlar/Dok%C3%BCman%20G%C3%B6rselleri/AnaMen%C3%BCAray%C3%BCz%C3%BC.jpeg](https://github.com/CAlperenC/Sophia/blob/main/Dok%C3%BCmanlar/Dok%C3%BCman%20G%C3%B6rselleri/testlog2.png)
-![TestLog3]([https://github.com/CAlperenC/Sophia/blob/main/Dok%C3%BCmanlar/Dok%C3%BCman%20G%C3%B6rselleri/AnaMen%C3%BCAray%C3%BCz%C3%BC.jpeg](https://github.com/CAlperenC/Sophia/blob/main/Dok%C3%BCmanlar/Dok%C3%BCman%20G%C3%B6rselleri/testlog3.png)
+![TestLog1](https://github.com/CAlperenC/Sophia/blob/main/Dok%C3%BCmanlar/Dok%C3%BCman%20G%C3%B6rselleri/testlog1.png)
+![TestLog2](https://github.com/CAlperenC/Sophia/blob/main/Dok%C3%BCmanlar/Dok%C3%BCman%20G%C3%B6rselleri/testlog2.png)
+![TestLog3](https://github.com/CAlperenC/Sophia/blob/main/Dok%C3%BCmanlar/Dok%C3%BCman%20G%C3%B6rselleri/testlog3.png)
 ## Görev Matrisi
 
 | Döküman Gereksinimleri       | Görev Alan Üye                       |
